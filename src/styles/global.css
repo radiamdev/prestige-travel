@@ -7,6 +7,8 @@
     --font-poppins: 'Poppins', sans-serif;
     --color-primary: #2e7d32;
     --color-pink-primary: #e0c0974a;
+    --color-pink-secondary: #e0c097;
+    --color-grey-primary: #8E8E8E;
 }
 
 body {

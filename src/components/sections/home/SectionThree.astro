@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets'
+import terracan from '../../../assets/images/home/experimented_terracan.webp'
+import reservationIcon from '../../../assets/icons/reservation.svg'
+import BookingButton from '../../common/BookingButton.astro'
+---
+
+<section
+    id=""
+    class="bg-white lg:px-24 px-6 lg:py-16 py-12 flex lg:flex-row flex-col items-center gap-16"
+>
+    <div class="lg:w-1/2 w-full relative">
+        <Image src={terracan} alt="Nature & Wildlife Tours" />
+        <div
+            class="bg-pink-secondary text-black font-poppins font-bold flex items-center justify-center py-3 px-6 border-2 border-white absolute -bottom-3 left-0"
+        >
+            Experimented
+        </div>
+    </div>
+    <div class="lg:w-1/2 w-full space-y-6">
+        <p class="text-black font-bold lg:text-start text-center">
+            Explore with Freedom
+        </p>
+        <h1 class="text-primary text-5xl font-bold lg:text-start text-center">
+            Car Rental
+        </h1>
+        <p class="text-black/70 lg:text-start text-center">
+            Discover Madagascar your way with our flexible and reliable car
+            rental service. Whether you're heading to the majestic south,
+            exploring remote national parks, or driving along the stunning
+            coastline, Prestiige Travel Madagascar offers the right vehicle for
+            your journey.
+        </p>
+        <p>
+            <ul class="list-none text-black/70 space-y-2">
+                <li>🔸 4x4s, minibuses, or economy cars available</li>
+                <li>🔸 With or without a professional driver</li>
+                <li>🔸 Daily rentals or long-term packages</li>
+                <li>🔸 Private transfers (airport, city-to-city) available</li>
+            </ul>
+        </p>
+        <p class="text-black/70 lg:text-start text-center">
+            Includes rental terms, pricing, and online booking form.
+        </p>
+
+        <!-- Booking button -->
+        <div class="flex lg:justify-start justify-center">
+            <BookingButton
+                label="Booking"
+                icon={reservationIcon.src}
+                iconAlt="Reservation icon"
+                className="mt-8"
+            />
+        </div>
+    </div>
+</section>
