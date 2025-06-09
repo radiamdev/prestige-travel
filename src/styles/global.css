@@ -1,1 +1,15 @@
+@import url(https://db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat);
+@import url(https://db.onlinewebfonts.com/c/8cdb6b9f81fd5d65941e179961c84065?family=Poppins);
+
 @import 'tailwindcss';
+
+
+
+@theme {
+    --font-poppins: 'Poppins', sans-serif;
+    --color-primary: #2e7d32;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
