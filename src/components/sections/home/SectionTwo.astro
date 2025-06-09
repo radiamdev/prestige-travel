@@ -1,0 +1,49 @@
+---
+import nature from '../../../assets/images/home/nature_&_wildlife_tours.webp'
+import coastal from '../../../assets/images/home/coastal_tours.webp'
+import starex from '../../../assets/images/home/starex_with_baobab.webp'
+import { Image } from 'astro:assets'
+---
+
+<section id="about-us" class="bg-pink-primary lg:px-24 px-6 lg:py-16 py-12 lg:space-y-20 space-y-8">
+    <div class="flex lg:flex-row flex-col items-center justify-start gap-8">
+        <div class="w-full lg:w-1/2 space-y-2">
+            <p class="text-black font-bold">Learn more about our agency</p>
+            <h1 class="text-primary text-5xl font-bold">Tours & Trips</h1>
+        </div>
+        <div class="w-full lg:w-1/2">
+            <p class="text-black/70 lg:text-end text-start">
+                Explore our curated selection of guided tours, tailored to help
+                you discover the unique beauty of southern Madagascar.
+            </p>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-4">
+        <div class="flex flex-col items-center justify-center gap-4 p-6">
+            <Image src={nature} alt="Nature & Wildlife Tours" />
+            <h4 class="font-semibold text-lg text-black">
+                Nature & Wildlife Tours
+            </h4>
+            <p class="text-center text-black/70">
+                Nature & Wildlife Tours (lemurs, baobabs, national parks)
+            </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-4 p-6">
+            <Image src={coastal} alt="Nature & Wildlife Tours" />
+            <h4 class="font-semibold text-lg text-black">Coastal Tours</h4>
+            <p class="text-center text-black/70">
+                Coastal Tours (beaches, fishing villages, coral reefs)
+            </p>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 p-6">
+            <Image src={starex} alt="Nature & Wildlife Tours" />
+            <h4 class="font-semibold text-lg text-black">
+                Cultural & Tribal Experiences
+            </h4>
+            <p class="text-center text-black/70">
+                Cultural & Tribal Experiences (local villages, traditions)
+            </p>
+        </div>
+    </div>
+</section>
