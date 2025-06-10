@@ -1,0 +1,33 @@
+---
+import background from '../../../assets/images/home/hero_bg.webp'
+---
+
+<div class="relative w-full h-screen overflow-hidden bg-white">
+    <!-- Image de fond en couleur originale, sans effet -->
+    <img
+        src={background.src}
+        alt="Baobab"
+        fetchpriority="high"
+        class="absolute inset-0 w-full h-full object-fill"
+    />
+
+    <!-- Contenu principal au-dessus de l’image -->
+    <main
+        class="relative z-10 flex items-center justify-center h-full text-white"
+    >
+        <div class="text-center px-4">
+            <h1 class="text-4xl font-bold">
+                Welcome to Prestige Travel Madagascar
+            </h1>
+            <p class="mt-4 max-w-xl mx-auto text-lg">
+                We specialize in authentic and natural tours in the southern
+                regions of Madagascar.
+            </p>
+            <button
+                class="mt-6 px-6 py-3 bg-white/20 border border-white rounded-full backdrop-blur text-white hover:bg-white/30 transition"
+            >
+                Explore
+            </button>
+        </div>
+    </main>
+</div>
