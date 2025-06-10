@@ -1,24 +1,28 @@
 ---
 import '../styles/global.css'
 import Layout from '../layouts/Layout.astro'
-import Welcome from '../components/homepage/sections/Welcome.astro'
-import SectionOne from '../components/homepage/sections/SectionOne.astro'
-import SectionTwo from '../components/homepage/sections/SectionTwo.astro'
-import SectionThree from '../components/homepage/sections/SectionThree.astro'
-import SectionFour from '../components/homepage/sections/SectionFour.astro'
-import SectionFive from '../components/homepage/sections/SectionFive.astro'
-import SectionSix from '../components/homepage/sections/SectionSix.astro'
+import Welcome from '../components/sections/homepage/Welcome.astro'
+import SectionOne from '../components/sections/homepage/SectionOne.astro'
+import SectionTwo from '../components/sections/homepage/SectionTwo.astro'
+import SectionThree from '../components/sections/homepage/SectionThree.astro'
+import SectionFour from '../components/sections/homepage/SectionFour.astro'
+import SectionFive from '../components/sections/homepage/SectionFive.astro'
+import SectionSix from '../components/sections/homepage/SectionSix.astro'
+import Footer from '../components/layout/Footer.astro'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-    <Welcome />
-    <SectionOne />
-    <SectionTwo />
-    <SectionThree />
-    <SectionFour />
-    <SectionFive />
-    <SectionSix />
+    <main>
+        <Welcome />
+        <SectionOne />
+        <SectionTwo />
+        <SectionThree />
+        <SectionFour />
+        <SectionFive />
+        <SectionSix />
+    </main>
+    <Footer />
 </Layout>
