@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets'
+import toyota from '../../../assets/images/car_rental/toyota.webp'
+import Icon from '../../../assets/icons/fleche-droite.svg'
+---
+
+<section
+    id=""
+    class="bg-white lg:px-24 px-6 lg:py-16 py-12 flex lg:flex-row flex-col-reverse items-center gap-16"
+>
+    <div class="lg:w-1/2 w-full space-y-8">
+        <p class="text-black font-bold lg:text-start text-center">Easy pay</p>
+        <h1 class="text-primary text-5xl font-bold lg:text-start text-center">
+            Payment Terms
+        </h1>
+
+        <div>
+            <ul class="list-none text-black/70 space-y-6">
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >20% deposit via bank transfer or Western Union (vehicle
+                        rental & tours)</span
+                    >
+                </li>
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >A service contract will be sent after reservation</span
+                    >
+                </li>
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >75% of the total paid in cash upon arrival in
+                        Antananarivo</span
+                    >
+                </li>
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >5% paid at the end of the tour</span
+                    >
+                </li>
+            </ul>
+        </div>
+        <p class="text-black font-bold lg:text-start text-center">Accepted currencies: Ariary, Euro, USD</p>
+    </div>
+
+    <!-- Image right side -->
+    <div class="lg:w-1/2 w-full relative">
+        <Image
+            src={toyota}
+            alt="Nature & Wildlife Tours"
+            fetchpriority="high"
+            class="w-lg h-auto"
+        />
+        <div
+            class="bg-pink-secondary text-black font-poppins font-bold flex items-center justify-center py-3 px-6 border-2 border-white absolute -bottom-3 right-0"
+        >
+            Experimented
+        </div>
+    </div>
+</section>
