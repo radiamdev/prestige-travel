@@ -1,9 +1,14 @@
 ---
 import { Image } from 'astro:assets'
 import backgroundImage from '../../../assets/images/home/contact_bg.webp'
-import makiContact from '../../../assets/images/home/maki_contact.webp'
+import makiContact from '../../../assets/images/car_rental/maki_contact2.webp'
 import envoyerIcon from '../../../assets/icons/envoyer.svg'
 import BookingButton from '../../common/BookingButton.astro'
+import InputField from '../../common/InputField.astro'
+import SelectField from '../../common/SelectField.astro'
+import TextareaField from '../../common/TextareaField.astro'
+
+const vehicles = ['SUV', 'Minivan', 'Sedan', '4x4', 'Pickup']
 ---
 
 <section
@@ -39,40 +44,57 @@ import BookingButton from '../../common/BookingButton.astro'
                 <div class="space-y-8">
                     <div class="space-y-4">
                         <p class="text-gray-600 text-sm font-medium">
-                            Have a question or need a quote?
+                            Secure your trip with a quick reservation.
                         </p>
                         <h2 class="text-primary text-4xl lg:text-5xl font-bold">
-                            Contact us
+                            Book Now
                         </h2>
                     </div>
 
-                    <form class="space-y-4" aria-label="Contact form">
-                        <input
+                    <form
+                        class="space-y-4 max-w-xl mx-auto"
+                        aria-label="Contact form"
+                    >
+                        <InputField
+                            id="fullname"
+                            label="Full name"
+                            placeholder="John Doe"
+                            required
+                        />
+                        <InputField
+                            id="email"
+                            label="Email"
                             type="email"
-                            placeholder="Email"
-                            class="w-full px-4 py-3 bg-white border-[1px] border-gray-900 rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-gray-700 placeholder-gray-400"
+                            placeholder="john@example.com"
                             required
-                            aria-label="Email address"
                         />
-
-                        <input
-                            type="text"
-                            placeholder="Nom"
-                            class="w-full px-4 py-3 bg-white border-[1px] border-gray-900 rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-gray-700 placeholder-gray-400"
+                        <SelectField
+                            id="vehicle"
+                            label="Desired vehicle"
+                            options={vehicles}
                             required
-                            aria-label="Name"
                         />
-
-                        <textarea
-                            placeholder="Message"
-                            rows="5"
-                            class="w-full px-4 py-3 bg-white border-[1px] border-gray-900 rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-gray-700 placeholder-gray-400 resize-none"
-                            required
-                            aria-label="Message"></textarea>
-
+                        <InputField
+                            id="pickup"
+                            label="Pickup location and date"
+                            placeholder="Antananarivo - 2025-06-15"
+                        />
+                        <InputField
+                            id="dropoff"
+                            label="Drop-off location and date"
+                            placeholder="Nosy Be - 2025-06-20"
+                        />
+                        <InputField
+                            id="passengers"
+                            label="Number of passengers"
+                            type="number"
+                            min="1"
+                            placeholder="e.g. 5"
+                        />
+                        <TextareaField />
                         <div class="pt-4">
                             <BookingButton
-                                label="Send"
+                                label="Send Request"
                                 icon={envoyerIcon.src}
                                 iconAlt="Send icon"
                             />
