@@ -1,0 +1,77 @@
+---
+import { Image } from 'astro:assets'
+import Icon from '../../../assets/icons/hand.svg'
+import illustration from '../../../assets/images/car_rental/whats_included.webp'
+import reservationIcon from '../../../assets/icons/reservation.svg'
+import BookingButton from '../../common/BookingButton.astro'
+---
+
+<section
+    id=""
+    class="bg-white lg:px-24 px-6 lg:py-16 py-12 flex lg:flex-row flex-col items-center gap-16"
+>
+    <div class="lg:w-1/2 w-full flex items-center justify-center">
+        <Image
+            src={illustration}
+            alt="Prestige travel"
+            fetchpriority="high"
+            class="lg:w-[80%] w-full h-auto"
+        />
+    </div>
+    <div class="lg:w-1/2 w-full space-y-6">
+        <p class="text-black font-bold lg:text-start text-center">
+            Explore with Freedom
+        </p>
+        <h1 class="text-primary text-5xl font-bold lg:text-start text-center">
+            What&apos;s Included
+        </h1>
+        <div>
+            <ul class="list-none text-black/70 space-y-4">
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >Private use of vehicle</span
+                    >
+                </li>
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >Experienced Malagasy driver-guide (English or French speaking)</span
+                    >
+                </li>
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >Air-conditioned, road-ready 4x4 or minibus</span
+                    >
+                </li>
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >Fuel and maintenance included</span
+                    >
+                </li>
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >Full support from our local agency during your trip</span
+                    >
+                </li>
+            </ul>
+        </div>
+        <p class="text-black/80 font-semibold lg:text-start text-center">
+            Fuel is not included and will be quoted separately based on your
+            planned itinerary.
+        </p>
+
+        <!-- Booking button -->
+        <div class="flex lg:justify-start justify-center">
+            <BookingButton
+                label="Booking"
+                icon={reservationIcon.src}
+                iconAlt="Reservation icon"
+                className="mt-8"
+            />
+        </div>
+    </div>
+</section>
