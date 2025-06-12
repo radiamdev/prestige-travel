@@ -1,33 +1,68 @@
 ---
-import background from '../../../assets/images/home/hero_bg.webp'
+import { Image } from 'astro:assets'
+import background from '../../../assets/images/car_rental/hero_illustration.webp'
+import BookingButton from '../../common/BookingButton.astro'
+import searchIcon from '../../../assets/icons/recherche.svg'
+import reservationIcon from '../../../assets/icons/reservation.svg'
+import logo from '../../../assets/logo.webp'
+import Header from '../../layout/Header.astro'
 ---
 
 <div class="relative w-full h-screen overflow-hidden bg-white">
     <!-- Image de fond en couleur originale, sans effet -->
-    <img
-        src={background.src}
-        alt="Baobab"
+    <Image
+        src={background}
+        alt="Terracan prestige"
         fetchpriority="high"
-        class="absolute inset-0 w-full h-full object-fill"
+        class="absolute inset-0 w-full h-full lg:object-fill object-contain"
     />
 
     <!-- Contenu principal au-dessus de l’image -->
     <main
         class="relative z-10 flex items-center justify-center h-full text-white"
     >
-        <div class="text-center px-4">
-            <h1 class="text-4xl font-bold">
-                Welcome to Prestige Travel Madagascar
-            </h1>
+        <!-- Logo prestige -->
+        <Image
+            src={logo}
+            alt="Terracan prestige"
+            fetchpriority="high"
+            class="absolute top-8 left-24 w-32 h-32 object-contain"
+        />
+
+        <!-- Navbar -->
+        <div
+            class="absolute top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        >
+            <Header />
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="space-y-8">
+            <h1 class="text-5xl font-bold text-center">Car Rental</h1>
             <p class="mt-4 max-w-xl mx-auto text-lg">
-                We specialize in authentic and natural tours in the southern
-                regions of Madagascar.
+                Discover Madagascar at your own pace with our reliable car
+                rental service. Whether you’re heading deep into national parks
+                or exploring coastal towns, we offer comfortable,
+                air-conditioned vehicles with experienced local driver-guides.
             </p>
-            <button
-                class="mt-6 px-6 py-3 bg-white/20 border border-white rounded-full backdrop-blur text-white hover:bg-white/30 transition"
-            >
-                Explore
-            </button>
+            <!-- Explore button -->
+            <div class="flex lg:justify-start justify-center">
+                <BookingButton
+                    label="Explore"
+                    icon={searchIcon.src}
+                    iconAlt="Reservation icon"
+                    className="mt-0"
+                />
+            </div>
+        </div>
+
+        <!-- Booking button -->
+        <div class="absolute top-8 right-24">
+            <BookingButton
+                label="Booking"
+                icon={reservationIcon.src}
+                iconAlt="Reservation icon"
+            />
         </div>
     </main>
 </div>
