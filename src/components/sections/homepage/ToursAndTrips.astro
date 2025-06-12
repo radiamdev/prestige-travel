@@ -1,49 +1,125 @@
 ---
-import nature from '../../../assets/images/home/nature_&_wildlife_tours.webp'
-import coastal from '../../../assets/images/home/coastal_tours.webp'
-import starex from '../../../assets/images/home/starex_with_baobab.webp'
+import img1 from '../../../assets/images/home/trips_and_tours/southern_circuit.webp'
+import img2 from '../../../assets/images/home/trips_and_tours/tsingy_de_bemaraha.webp'
+import img3 from '../../../assets/images/home/trips_and_tours/tsiribihina.webp'
+import img4 from '../../../assets/images/home/trips_and_tours/andasibe.webp'
+import img5 from '../../../assets/images/home/trips_and_tours/sainte_marie.webp'
+import img6 from '../../../assets/images/home/trips_and_tours/isalo.webp'
+import img7 from '../../../assets/images/home/trips_and_tours/diego.webp'
+import img8 from '../../../assets/images/home/trips_and_tours/tana.webp'
+import img9 from '../../../assets/images/home/trips_and_tours/morondava.webp'
 import { Image } from 'astro:assets'
+import BookingButton from '../../common/BookingButton.astro'
+import reservationIcon from '../../../assets/icons/reservation.svg'
+
+const toursAndTrips = [
+    {
+        title: 'Southern & Deep South Circuit',
+        subtitle:
+            'From Antsirabe to Tulear and beyond — landscapes, culture, and wildlife.',
+        image: img1,
+        link: '#!',
+    },
+    {
+        title: 'Tsingy de Bemaraha Circuit',
+        subtitle:
+            'Adventure to the UNESCO-listed stone forest in western Madagascar.',
+        image: img2,
+        link: '#!',
+    },
+    {
+        title: 'Tsiribihina River Descent',
+        subtitle:
+            'Multi-day river trip through wild nature and remote villages.',
+        image: img3,
+        link: '#!',
+    },
+    {
+        title: 'Andasibe & Manambato',
+        subtitle:
+            'Rainforest, lakes, and the famous Indri lemur — ideal short escape.',
+        image: img4,
+        link: '#!',
+    },
+    {
+        title: 'Sainte Marie Island',
+        subtitle:
+            'Beaches, whales (in season), and island relaxation.',
+        image: img5,
+        link: '#!',
+    },
+    {
+        title: 'Isalo (Ranohira) Circuit',
+        subtitle:
+            'Canyons, natural pools, and desert landscapes in Isalo Park.',
+        image: img6,
+        link: '#!',
+    },
+    {
+        title: 'Diego / Majunga Circuit',
+        subtitle:
+            'Northern and western Madagascar: coastal views and local charm.',
+        image: img7,
+        link: '#!',
+    },
+    {
+        title: 'Antananarivo City Tour',
+        subtitle:
+            'Discover the capital’s history, culture, and key landmarks.',
+        image: img8,
+        link: '#!',
+    },
+    {
+        title: 'Morondava Circuit',
+        subtitle:
+            'Explore the famous Avenue of the Baobabs, local villages, and the western coast’s laid-back charm — perfect for sunsets and scenic adventures.',
+        image: img9,
+        link: '#!',
+    },
+]
 ---
 
-<section id="" class="bg-pink-primary lg:px-24 px-6 lg:py-16 py-12 lg:space-y-20 space-y-8">
+<section
+    id="tours"
+    class="bg-pink-primary lg:px-24 px-6 lg:py-16 py-12 lg:space-y-12 space-y-8"
+>
     <div class="flex lg:flex-row flex-col items-center justify-start gap-8">
         <div class="w-full lg:w-1/2 space-y-2">
-            <p class="text-black font-bold lg:text-start text-center">Learn more about our agency</p>
-            <h1 class="text-primary text-5xl font-bold lg:text-start text-center">Tours & Trips</h1>
+            <p class="text-black font-bold lg:text-start text-center">
+                Price Upon Request
+            </p>
+            <h1
+                class="text-primary text-5xl font-bold lg:text-start text-center"
+            >
+                Tours & Trips
+            </h1>
         </div>
         <div class="w-full lg:w-1/2">
             <p class="text-black/70 lg:text-end text-center">
-                Explore our curated selection of guided tours, tailored to help
-                you discover the unique beauty of southern Madagascar.
+                We work in partnership with domestic airlines in Madagascar to
+                help you coordinate flights between key destinations like
+                Antananarivo, Morondava, Diego, Tulear, Sainte Marie, and more.
             </p>
         </div>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-4">
-        <div class="flex flex-col items-center justify-center gap-4 p-6">
-            <Image src={nature} alt="Nature & Wildlife Tours" />
-            <h4 class="font-semibold text-lg text-black">
-                Nature & Wildlife Tours
-            </h4>
-            <p class="text-center text-black/70">
-                Nature & Wildlife Tours (lemurs, baobabs, national parks)
-            </p>
-        </div>
+        {
+            toursAndTrips.map(({ title, subtitle, image }) => (
+                <div class="flex flex-col items-center justify-center gap-4 p-6">
+                    <Image src={image} alt="Nature & Wildlife Tours" />
+                    <h4 class="font-semibold text-lg text-black">{title}</h4>
+                    <p class="text-center text-black/70">{subtitle}</p>
+                </div>
+            ))
+        }
+    </div>
 
-        <div class="flex flex-col items-center justify-center gap-4 p-6">
-            <Image src={coastal} alt="Nature & Wildlife Tours" />
-            <h4 class="font-semibold text-lg text-black">Coastal Tours</h4>
-            <p class="text-center text-black/70">
-                Coastal Tours (beaches, fishing villages, coral reefs)
-            </p>
-        </div>
-        <div class="flex flex-col items-center justify-center gap-4 p-6">
-            <Image src={starex} alt="Nature & Wildlife Tours" />
-            <h4 class="font-semibold text-lg text-black">
-                Cultural & Tribal Experiences
-            </h4>
-            <p class="text-center text-black/70">
-                Cultural & Tribal Experiences (local villages, traditions)
-            </p>
-        </div>
+    <div class="flex lg:justify-start justify-center">
+        <BookingButton
+            label="Contact us"
+            icon={reservationIcon.src}
+            iconAlt="Reservation icon"
+            href="/#contact"
+        />
     </div>
 </section>

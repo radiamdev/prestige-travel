@@ -1,33 +1,92 @@
 ---
-import background from '../../../assets/images/home/hero_bg.webp'
+import { Image } from 'astro:assets'
+import background from '../../../assets/images/home/hero_home.webp'
+import BookingButton from '../../common/BookingButton.astro'
+import searchIcon from '../../../assets/icons/recherche.svg'
+import reservationIcon from '../../../assets/icons/reservation.svg'
+import logo from '../../../assets/logo.webp'
+import trio from '../../../assets/images/home/trio.webp'
+import Header from '../../layout/Header.astro'
+import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
+import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
 ---
 
 <div class="relative w-full h-screen overflow-hidden bg-white">
     <!-- Image de fond en couleur originale, sans effet -->
-    <img
-        src={background.src}
-        alt="Baobab"
+    <Image
+        src={background}
+        alt="Terracan prestige"
         fetchpriority="high"
-        class="absolute inset-0 w-full h-full object-fill"
+        class="absolute inset-0 w-full h-full object-cover"
     />
 
     <!-- Contenu principal au-dessus de l’image -->
     <main
         class="relative z-10 flex items-center justify-center h-full text-white"
     >
-        <div class="text-center px-4">
-            <h1 class="text-4xl font-bold">
-                Welcome to Prestige Travel Madagascar
-            </h1>
-            <p class="mt-4 max-w-xl mx-auto text-lg">
-                We specialize in authentic and natural tours in the southern
-                regions of Madagascar.
-            </p>
-            <button
-                class="mt-6 px-6 py-3 bg-white/20 border border-white rounded-full backdrop-blur text-white hover:bg-white/30 transition"
-            >
-                Explore
-            </button>
+        <!-- Logo prestige -->
+        <Image
+            src={logo}
+            alt="Terracan prestige"
+            fetchpriority="high"
+            class="absolute lg:top-12 top-3 lg:left-24 left-3 w-24 h-24 object-contain"
+        />
+
+        <!-- Toggle button for mobile menu  -->
+        <BurgerMenuButton />
+
+        <!-- Desktop nav -->
+        <div
+            class="hidden lg:block absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        >
+            <Header />
         </div>
+
+        <!-- Mobile menu panel -->
+        <MobileMenuPanel />
+
+        <!-- Contenu principal -->
+        <div class="space-y-8 max-w-xl mx-auto lg:mt-24 lg:ml-24 ml-8">
+            <h1 class="text-5xl font-bold text-start leading-tight">
+                Welcome to <br /> Prestige Travel <br /> Madagascar
+            </h1>
+            <p class="">
+                We specialize in authentic and naturalist tours in the southern
+                region of Madagascar. Experience an immersive journey through
+                nature, culture, and adventure.
+            </p>
+            <!-- Explore button -->
+            <div class="flex lg:justify-start justify-center">
+                <BookingButton
+                    label="Explore"
+                    icon={searchIcon.src}
+                    iconAlt="Reservation icon"
+                    className="mt-0"
+                    href="/#tours"
+                />
+            </div>
+        </div>
+
+        <!-- Booking button -->
+        <div class="hidden lg:block absolute top-12 right-24">
+            <BookingButton
+                label="Booking"
+                icon={reservationIcon.src}
+                iconAlt="Reservation icon"
+                href="/car-rental#booknow"
+            />
+        </div>
+
+        <Image
+            src={trio}
+            alt="Terracan prestige"
+            fetchpriority="high"
+            class="hidden lg:block absolute bottom-0 right-0 w-md h-auto object-contain"
+        />
     </main>
 </div>
+
+<!-- JS script for menu toggle -->
+<script>
+    import '../../../scripts/menu.ts'
+</script>

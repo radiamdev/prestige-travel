@@ -6,6 +6,8 @@ import searchIcon from '../../../assets/icons/recherche.svg'
 import reservationIcon from '../../../assets/icons/reservation.svg'
 import logo from '../../../assets/logo.webp'
 import Header from '../../layout/Header.astro'
+import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
+import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
 ---
 
 <div class="relative w-full h-screen overflow-hidden bg-white">
@@ -14,7 +16,7 @@ import Header from '../../layout/Header.astro'
         src={background}
         alt="Terracan prestige"
         fetchpriority="high"
-        class="absolute inset-0 w-full h-full lg:object-fill object-contain"
+        class="absolute inset-0 w-full h-full object-cover"
     />
 
     <!-- Contenu principal au-dessus de l’image -->
@@ -26,43 +28,55 @@ import Header from '../../layout/Header.astro'
             src={logo}
             alt="Terracan prestige"
             fetchpriority="high"
-            class="absolute top-8 left-24 w-32 h-32 object-contain"
+            class="absolute lg:top-10 top-3 lg:left-24 left-3 w-24 h-24 object-contain"
         />
 
-        <!-- Navbar -->
+        <!-- Toggle button for mobile menu  -->
+        <BurgerMenuButton />
+
+        <!-- Desktop Navbar -->
         <div
-            class="absolute top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            class="hidden lg:block absolute top-10 left-[53%] transform -translate-x-1/2 -translate-y-1/2"
         >
             <Header />
         </div>
 
+        <!-- Mobile menu panel -->
+        <MobileMenuPanel />
+
         <!-- Contenu principal -->
-        <div class="space-y-8">
+        <div class="max-w-2xl mx-auto space-y-8">
             <h1 class="text-5xl font-bold text-center">Car Rental</h1>
-            <p class="mt-4 max-w-xl mx-auto text-lg">
+            <p class="text-center">
                 Discover Madagascar at your own pace with our reliable car
                 rental service. Whether you’re heading deep into national parks
                 or exploring coastal towns, we offer comfortable,
                 air-conditioned vehicles with experienced local driver-guides.
             </p>
             <!-- Explore button -->
-            <div class="flex lg:justify-start justify-center">
+            <div class="flex lg:justify-end justify-center">
                 <BookingButton
                     label="Explore"
                     icon={searchIcon.src}
                     iconAlt="Reservation icon"
-                    className="mt-0"
+                    href="/#tours"
                 />
             </div>
         </div>
 
         <!-- Booking button -->
-        <div class="absolute top-8 right-24">
+        <div class="absolute top-10 right-24 hidden lg:block">
             <BookingButton
                 label="Booking"
                 icon={reservationIcon.src}
                 iconAlt="Reservation icon"
+                href="#booknow"
             />
         </div>
     </main>
 </div>
+
+<!-- JS script for menu toggle -->
+<script>
+    import '../../../scripts/menu.ts'
+</script>
