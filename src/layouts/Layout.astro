@@ -1,3 +1,14 @@
+---
+import Loading from '../components/common/Loading.astro'
+import logo from '../assets/logo.webp'
+
+// Props attendues pour les métadonnées
+const {
+    title = 'Prestige Travel',
+    description = 'Explore Madagascar with Prestige Travel. Tours, car rentals, and unforgettable experiences.',
+} = Astro.props
+---
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -5,9 +16,12 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
         <meta name="generator" content={Astro.generator} />
-        <title>Prestige Travel</title>
-    </head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </head>
+      
     <body>
+        <!-- <Loading logo={logo} /> -->
         <slot />
     </body>
 </html>
@@ -20,3 +34,7 @@
         height: 100%;
     }
 </style>
+
+<script>
+    import '../scripts/global.ts'
+</script>

@@ -8,9 +8,13 @@ import PaymentTerms from '../components/sections/carrentalpage/PaymentTerms.astr
 import SetupOrEmptySection from '../components/sections/carrentalpage/SetupOrEmptySection.astro'
 import BookNowSection from '../components/sections/carrentalpage/BookNowSection.astro'
 import Footer from '../components/layout/Footer.astro'
+
+const pageTitle = 'Car Rental | Prestige Travel Madagascar'
+const pageDescription =
+    'Authentic and naturalist tours in the southern region of Madagascar with Prestige Travel.'
 ---
 
-<Layout>
+<Layout title={pageTitle} description={pageDescription}>
     <main>
         <Welcome />
         <WhatsIncludedSection />
