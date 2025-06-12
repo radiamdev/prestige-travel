@@ -7,6 +7,8 @@ import reservationIcon from '../../../assets/icons/reservation.svg'
 import logo from '../../../assets/logo.webp'
 import trio from '../../../assets/images/home/trio.webp'
 import Header from '../../layout/Header.astro'
+import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
+import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
 ---
 
 <div class="relative w-full h-screen overflow-hidden bg-white">
@@ -31,17 +33,7 @@ import Header from '../../layout/Header.astro'
         />
 
         <!-- Toggle button for mobile menu  -->
-        <div
-            id="menu-toggle"
-            class="flex flex-col cursor-pointer absolute top-12 right-10 gap-1 w-10 h-10 lg:hidden z-50"
-        >
-            <span class="line w-full bg-black h-1 transition duration-300"
-            ></span>
-            <span class="line w-full bg-black h-1 transition duration-300"
-            ></span>
-            <span class="line w-full bg-black h-1 transition duration-300"
-            ></span>
-        </div>
+        <BurgerMenuButton />
 
         <!-- Desktop nav -->
         <div
@@ -51,15 +43,7 @@ import Header from '../../layout/Header.astro'
         </div>
 
         <!-- Mobile menu panel -->
-        <ul
-            id="mobile-menu"
-            class="fixed top-0 right-[-100%] w-full h-screen bg-primary text-white flex flex-col items-center justify-center gap-5 text-2xl transition-all duration-300 lg:hidden z-40"
-        >
-            <li><a href="/"> Home </a></li>
-            <li><a href="/#about-us"> About Us </a></li>
-            <li><a href="/#tours"> Tours & Stays </a></li>
-            <li><a href="/car-rental"> Car Rental </a></li>
-        </ul>
+        <MobileMenuPanel />
 
         <!-- Contenu principal -->
         <div class="space-y-8 max-w-xl mx-auto lg:mt-24 lg:ml-24 ml-8">
@@ -104,48 +88,5 @@ import Header from '../../layout/Header.astro'
 
 <!-- JS script for menu toggle -->
 <script>
-    const toggle = document.getElementById('menu-toggle')
-    const menu = document.getElementById('mobile-menu')
-
-    if (toggle && menu) {
-        const lines = toggle.querySelectorAll('.line')
-
-        toggle.addEventListener('click', () => {
-            const isOpen = menu.classList.contains('right-0')
-
-            // Toggle visibility
-            menu.classList.toggle('right-0')
-            menu.classList.toggle('right-[-100%]')
-
-            // Animate the lines (turn into X)
-            lines[0].classList.toggle('rotate-45')
-            lines[0].classList.toggle('absolute')
-            lines[0].classList.toggle('top-1/2')
-
-            lines[1].classList.toggle('opacity-0')
-            lines[1].classList.toggle('absolute')
-            lines[1].classList.toggle('top-1/2')
-
-            lines[2].classList.toggle('-rotate-45')
-            lines[2].classList.toggle('absolute')
-            lines[2].classList.toggle('top-1/2')
-        })
-
-        // Close menu when clicking on a link
-        document.querySelectorAll('#mobile-menu a').forEach((link) => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('right-0')
-                menu.classList.add('right-[-100%]')
-                lines.forEach((line) => {
-                    line.classList.remove(
-                        'rotate-45',
-                        '-rotate-45',
-                        'absolute',
-                        'top-1/2',
-                        'opacity-0'
-                    )
-                })
-            })
-        })
-    }
+    import '../../../scripts/menu.ts'
 </script>
