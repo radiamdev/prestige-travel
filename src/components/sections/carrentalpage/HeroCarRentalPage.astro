@@ -28,24 +28,29 @@ import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
             src={logo}
             alt="Terracan prestige"
             fetchpriority="high"
-            class="absolute lg:top-10 top-3 lg:left-24 left-3 w-24 h-24 object-contain"
+            class="absolute lg:top-10 top-5 lg:left-24 left-5 w-24 h-24 object-contain"
         />
-
-        <!-- Toggle button for mobile menu  -->
-        <BurgerMenuButton />
 
         <!-- Desktop Navbar -->
         <div
-            class="hidden lg:block absolute top-10 left-[53%] transform -translate-x-1/2 -translate-y-1/2"
+            class="hidden lg:block absolute top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-md"
         >
             <Header />
+        </div>
+
+        <!-- Toggle button for mobile menu  -->
+        <div
+            id="menu-toggle"
+            class="flex flex-col cursor-pointer absolute top-14 right-10 gap-1 w-10 h-10 lg:hidden z-50"
+        >
+            <BurgerMenuButton />
         </div>
 
         <!-- Mobile menu panel -->
         <MobileMenuPanel />
 
         <!-- Contenu principal -->
-        <div class="max-w-2xl mx-auto space-y-8">
+        <div class="max-w-2xl mx-auto space-y-8 lg:-mt-40 -mt-72">
             <h1 class="text-5xl font-bold text-center">Car Rental</h1>
             <p class="text-center">
                 Discover Madagascar at your own pace with our reliable car
