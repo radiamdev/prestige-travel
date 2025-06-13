@@ -43,8 +43,7 @@ const toursAndTrips = [
     },
     {
         title: 'Sainte Marie Island',
-        subtitle:
-            'Beaches, whales (in season), and island relaxation.',
+        subtitle: 'Beaches, whales (in season), and island relaxation.',
         image: img5,
         link: '#!',
     },
@@ -64,8 +63,7 @@ const toursAndTrips = [
     },
     {
         title: 'Antananarivo City Tour',
-        subtitle:
-            'Discover the capital’s history, culture, and key landmarks.',
+        subtitle: 'Discover the capital’s history, culture, and key landmarks.',
         image: img8,
         link: '#!',
     },
@@ -105,8 +103,12 @@ const toursAndTrips = [
     <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-4">
         {
             toursAndTrips.map(({ title, subtitle, image }) => (
-                <div class="flex flex-col items-center justify-center gap-4 p-6">
-                    <Image src={image} alt="Nature & Wildlife Tours" />
+                <div class="flex flex-col items-center justify-start gap-4 p-6">
+                    <Image
+                        src={image}
+                        alt={title}
+                        class="w-full h-auto"
+                    />
                     <h4 class="font-semibold text-lg text-black">{title}</h4>
                     <p class="text-center text-black/70">{subtitle}</p>
                 </div>

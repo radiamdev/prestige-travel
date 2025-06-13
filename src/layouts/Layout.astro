@@ -1,7 +1,4 @@
 ---
-import Loading from '../components/common/Loading.astro'
-import logo from '../assets/logo.webp'
-
 // Props attendues pour les métadonnées
 const {
     title = 'Prestige Travel',
@@ -21,7 +18,6 @@ const {
       </head>
       
     <body>
-        <!-- <Loading logo={logo} /> -->
         <slot />
     </body>
 </html>
@@ -34,7 +30,3 @@ const {
         height: 100%;
     }
 </style>
-
-<script>
-    import '../scripts/global.ts'
-</script>
