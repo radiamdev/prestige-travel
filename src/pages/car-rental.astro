@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css'
 import Layout from '../layouts/Layout.astro'
-import Welcome from '../components/sections/carrentalpage/Welcome.astro'
+import HeroCarRentalPage from '../components/sections/carrentalpage/HeroCarRentalPage.astro'
 import WhatsIncludedSection from '../components/sections/carrentalpage/WhatsIncludedSection.astro'
 import AvailableVehicles from '../components/sections/carrentalpage/AvailableVehicles.astro'
 import PaymentTerms from '../components/sections/carrentalpage/PaymentTerms.astro'
@@ -16,7 +16,7 @@ const pageDescription =
 
 <Layout title={pageTitle} description={pageDescription}>
     <main>
-        <Welcome />
+        <HeroCarRentalPage />
         <WhatsIncludedSection />
         <AvailableVehicles />
         <PaymentTerms />

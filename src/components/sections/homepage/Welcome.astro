@@ -32,19 +32,19 @@ import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
             class="absolute lg:top-12 top-3 lg:left-24 left-3 w-24 h-24 object-contain"
         />
 
+        <!-- Desktop nav -->
+        <div
+            class="hidden lg:block absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-md ml-6"
+        >
+            <Header />
+        </div>
+
         <!-- Toggle button for mobile menu  -->
         <div
             id="menu-toggle"
             class="flex flex-col cursor-pointer absolute top-12 right-10 gap-1 w-10 h-10 lg:hidden z-50"
         >
             <BurgerMenuButton />
-        </div>
-
-        <!-- Desktop nav -->
-        <div
-            class="hidden lg:block absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-        >
-            <Header />
         </div>
 
         <!-- Mobile menu panel -->
