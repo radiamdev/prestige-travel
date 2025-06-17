@@ -10,7 +10,11 @@ import BookingButton from '../../common/BookingButton.astro'
     class="bg-white lg:px-24 px-6 lg:py-16 py-12 flex lg:flex-row flex-col items-center gap-16"
 >
     <div class="lg:w-1/2 w-full relative">
-        <Image src={terracan} alt="Nature & Wildlife Tours" fetchpriority="high" />
+        <Image
+            src={terracan}
+            alt="Nature & Wildlife Tours"
+            fetchpriority="high"
+        />
         <div
             class="bg-pink-secondary text-black font-poppins font-bold flex items-center justify-center py-3 px-6 border-2 border-white absolute -bottom-3 left-0"
         >
@@ -44,12 +48,14 @@ import BookingButton from '../../common/BookingButton.astro'
         </p>
 
         <!-- Booking button -->
+
         <div class="flex lg:justify-start justify-center">
             <BookingButton
                 label="Booking"
                 icon={reservationIcon.src}
                 iconAlt="Reservation icon"
                 className="mt-8"
+                href="/car-rental#booknow"
             />
         </div>
     </div>

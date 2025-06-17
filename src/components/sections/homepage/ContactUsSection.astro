@@ -2,10 +2,7 @@
 import { Image } from 'astro:assets'
 import backgroundImage from '../../../assets/images/home/contact_bg.webp'
 import makiContact from '../../../assets/images/home/maki_contact.webp'
-import envoyerIcon from '../../../assets/icons/envoyer.svg'
-import BookingButton from '../../common/BookingButton.astro'
-import InputField from '../../common/InputField.astro'
-import TextareaField from '../../common/TextareaField.astro'
+import ContactUsForm from '../../forms/ContactUsForm.astro'
 ---
 
 <section
@@ -48,31 +45,8 @@ import TextareaField from '../../common/TextareaField.astro'
                         </h2>
                     </div>
 
-                    <form class="space-y-4" aria-label="Contact form">
-                        <InputField
-                            id="email"
-                            label="Email"
-                            placeholder="example@prestige-travel.mg"
-                            required
-                        />
-
-                        <InputField
-                            id="name"
-                            label="Full name"
-                            placeholder="John Doe"
-                            required
-                        />
-
-                        <TextareaField />
-
-                        <div class="pt-4">
-                            <BookingButton
-                                label="Send"
-                                icon={envoyerIcon.src}
-                                iconAlt="Send icon"
-                            />
-                        </div>
-                    </form>
+                    <!-- Contact Us form -->
+                    <ContactUsForm />
                 </div>
 
                 <!-- Image du maki -->

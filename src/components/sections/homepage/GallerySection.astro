@@ -1,12 +1,5 @@
 ---
-import { Image } from 'astro:assets'
-import terracan from '../../../assets/images/home/terracan.webp'
-import baobabAndWay from '../../../assets/images/home/baobab_and_way.webp'
-import prestigeMountains from '../../../assets/images/home/prestige_and_mountains.webp'
-import cameleon from '../../../assets/images/home/cameleon.webp'
-import baobabAndSun from '../../../assets/images/home/baobab_and_sun.webp'
-import serpent from '../../../assets/images/home/serpent.webp'
-import baobabAndWater from '../../../assets/images/home/baobab_and_water.webp'
+import GalleryBlock from './GalleryBlock'
 ---
 
 <section id="" class="bg-white lg:px-24 px-6 py-16 space-y-6">
@@ -18,57 +11,78 @@ import baobabAndWater from '../../../assets/images/home/baobab_and_water.webp'
             Gallery
         </h1>
         <p class="text-black/70 lg:text-start text-center">
-            A journey begins with a single image. Explore the stunning landscapes, unique wildlife, vibrant culture, and memorable moments captured during our real tours across southern Madagascar.
+            A journey begins with a single image. Explore the stunning
+            landscapes, unique wildlife, vibrant culture, and memorable moments
+            captured during our real tours across southern Madagascar.
         </p>
     </div>
-    <div class="flex lg:flex-row flex-col items-start gap-4">
-        <div class="lg:space-y-6 space-y-4">
-            <Image
-                src={terracan}
-                alt="Terracan Prestige Travel"
-                class="w-full h-full object-contain"
-                fetchpriority="high"
-            />
-            <Image
-                src={baobabAndWay}
-                alt="Baobab prestige travel"
-                class="w-full h-full object-contain"
-                fetchpriority="high"
-            />
+    <div class="flex lg:flex-row flex-col items-center gap-4">
+        <!-- First col in left side -->
+        <div class="space-y-4">
+            <div class="w-sm h-auto ">
+                <GalleryBlock
+                    client:load
+                    images={['a11.webp', 'b11.webp', 'c11.webp']}
+                    alt="prestige travel"
+                />
+            </div>
+            <div class="w-sm h-auto">
+                <GalleryBlock
+                    client:load
+                    images={['a12.webp', 'b12.webp']}
+                    alt="prestige travel"
+                />
+            </div>
         </div>
-        <div class="lg:space-y-2 space-y-1">
-            <Image
-                src={prestigeMountains}
-                alt="serpent prestige travel"
-                class="w-full h-full object-contain"
-                fetchpriority="high"
-            />
-            <Image
-                src={cameleon}
-                alt="serpent prestige travel"
-                class="w-full h-full object-contain"
-                fetchpriority="high"
-            />
-            <Image
-                src={baobabAndSun}
-                alt="serpent prestige travel"
-                class="w-full h-full object-contain"
-                fetchpriority="high"
-            />
+        <!-- Second col in centered side -->
+        <div class="space-y-4">
+            <div class="w-sm h-auto">
+                <GalleryBlock
+                    client:load
+                    images={[
+                        'a21.webp',
+                        'b21.webp',
+                        'c21.webp',
+                        'd21.webp',
+                        'e21.webp',
+                        'f21.webp',
+                        'g21.webp',
+                    ]}
+                    alt="prestige travel"
+                />
+            </div>
+            <div class="w-sm h-auto">
+                <GalleryBlock
+                    client:load
+                    images={['a22.webp', 'b22.webp', 'c22.webp', 'd22.webp']}
+                    alt="prestige travel"
+                />
+            </div>
+            <div class="w-sm h-auto">
+                <GalleryBlock
+                    client:load
+                    images={['a23.webp', 'b23.webp', 'c23.webp', 'd23.webp', 'e23.webp', 'f23.webp', 'g23.webp']}
+                    alt="prestige travel"
+                />
+            </div>
         </div>
-        <div class="lg:space-y-6 space-y-4">
-            <Image
-                src={serpent}
-                alt="serpent prestige travel"
-                class="w-full h-full object-contain"
-                fetchpriority="high"
-            />
-            <Image
-                src={baobabAndWater}
-                alt="Baobab prestige travel"
-                class="w-full h-full object-contain"
-                fetchpriority="high"
-            />
+        <!-- Third col in right side -->
+        <div class="space-y-4">
+            <div class="w-sm h-aut">
+                <GalleryBlock
+                    client:load
+                    images={['a31.webp', 'b31.webp']}
+                    alt="prestige travel"
+                />
+            </div>
+
+            <div class="w-sm h-auto">
+                <GalleryBlock
+                    client:load
+                    images={['a32.webp', 'c32.webp', 'b32.webp',]}
+                    alt="prestige travel"
+                />
+            </div>
         </div>
     </div>
 </section>
