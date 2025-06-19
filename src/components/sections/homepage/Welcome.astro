@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
-import background from '../../../assets/images/home/hero_home.webp'
+import background1 from '../../../assets/images/home/hero_home.webp'
+import background2 from '../../../assets/images/home/bg_mobile.webp'
 import BookingButton from '../../common/BookingButton.astro'
 import searchIcon from '../../../assets/icons/recherche.svg'
 import reservationIcon from '../../../assets/icons/reservation.svg'
@@ -14,10 +15,16 @@ import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
 <div class="relative w-full h-screen overflow-hidden bg-white">
     <!-- Image de fond en couleur originale, sans effet -->
     <Image
-        src={background}
-        alt="Terracan prestige"
+        src={background1}
+        alt="background"
         fetchpriority="high"
-        class="absolute inset-0 w-full h-full object-cover"
+        class="absolute inset-0 w-full h-full object-cover hidden lg:block"
+    />
+    <Image
+        src={background2}
+        alt="background"
+        fetchpriority="high"
+        class="absolute inset-0 w-full h-full object-cover lg:hidden block"
     />
 
     <!-- Contenu principal au-dessus de l’image -->
@@ -29,7 +36,7 @@ import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
             src={logo}
             alt="Terracan prestige"
             fetchpriority="high"
-            class="absolute lg:top-12 top-3 lg:left-24 left-3 w-24 h-24 object-contain"
+            class="absolute top-0 left-0 lg:top-12 lg:left-24 w-24 h-24 object-contain lg:block hidden"
         />
 
         <!-- Desktop nav -->
@@ -42,7 +49,7 @@ import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
         <!-- Toggle button for mobile menu  -->
         <div
             id="menu-toggle"
-            class="flex flex-col cursor-pointer absolute top-12 right-10 gap-1 w-10 h-10 lg:hidden z-50"
+            class="flex flex-col cursor-pointer absolute top-10 right-10 gap-1 w-10 h-10 lg:hidden z-50"
         >
             <BurgerMenuButton />
         </div>
@@ -61,7 +68,7 @@ import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
                 nature, culture, and adventure.
             </p>
             <!-- Explore button -->
-            <div class="flex lg:justify-start justify-center">
+            <div class="flex justify-start">
                 <BookingButton
                     label="Explore"
                     icon={searchIcon.src}
