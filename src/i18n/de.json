@@ -1,0 +1,13 @@
+{
+    "homePage": {},
+    "carRentalPage": {
+        "gallerySection": {
+            "title": "Fahrzeuggalerie",
+            "vehicles": [
+                "Hyundai Limousine",
+                "Italienisches Cabrio",
+                "Deutscher SUV"
+            ]
+        }
+    }
+}

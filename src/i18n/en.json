@@ -1,0 +1,13 @@
+{
+    "homePage": {},
+    "carRentalPage": {
+        "gallerySection": {
+            "title": "Vehicle Gallery",
+            "vehicles": [
+              "Hyundai Sedan",
+              "Italian Convertible",
+              "German SUV"
+            ]
+          }
+    }
+}

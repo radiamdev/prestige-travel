@@ -1,0 +1,13 @@
+{
+    "homePage": {},
+    "carRentalPage": {
+        "gallerySection":  {
+            "title": "Galleria di Veicoli",
+            "vehicles": [
+              "Hyundai Berlina",
+              "Cabrio Italiana",
+              "SUV Italiano"
+            ]
+          }
+    }
+}

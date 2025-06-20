@@ -13,4 +13,11 @@ export default defineConfig({
             experimentalReactChildren: true,
         }),
     ],
+    i18n: {
+        defaultLocale: 'en', // Default language
+        locales: ['en', 'it', 'de'], // Supported languages
+        routing: {
+            prefixDefaultLocale: true, // Ensures all routes include the locale (e.g., /en/gallery, /it/gallery, /de/gallery). If set to false, the default locale (en) would omit the prefix (e.g., /gallery).
+        },
+    },
 })

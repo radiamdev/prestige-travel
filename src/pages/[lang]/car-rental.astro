@@ -1,0 +1,27 @@
+---
+import '../styles/global.css'
+import Layout from '../../layouts/Layout.astro'
+import HeroCarRentalPage from '../../components/sections/carrentalpage/HeroCarRentalPage.astro'
+import WhatsIncludedSection from '../../components/sections/carrentalpage/WhatsIncludedSection.astro'
+import AvailableVehicles from '../../components/sections/carrentalpage/AvailableVehicles.astro'
+import PaymentTerms from '../../components/sections/carrentalpage/PaymentTerms.astro'
+import SetupOrEmptySection from '../../components/sections/carrentalpage/SetupOrEmptySection.astro'
+import BookNowSection from '../../components/sections/carrentalpage/BookNowSection.astro'
+import Footer from '../../components/layout/Footer.astro'
+
+const pageTitle = 'Car Rental | Prestige Travel Madagascar'
+const pageDescription =
+    'Authentic and naturalist tours in the southern region of Madagascar with Prestige Travel.'
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+    <main>
+        <HeroCarRentalPage />
+        <WhatsIncludedSection />
+        <AvailableVehicles />
+        <PaymentTerms />
+        <SetupOrEmptySection />
+        <BookNowSection />
+    </main>
+    <Footer />
+</Layout>
