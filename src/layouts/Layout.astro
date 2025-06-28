@@ -1,4 +1,6 @@
 ---
+import LanguagePicker from '../components/common/LanguagePicker.astro'
+
 // Props attendues pour les métadonnées
 const {
     title = 'Prestige Travel',
@@ -16,14 +18,13 @@ const {
         <title>{title}</title>
         <meta name="description" content={description} />
     </head>
-    <header>
-        <LanguageSwitcher />
-    </header>
 
     <body>
+        <header>
+            <LanguagePicker />
+        </header>
         <slot />
     </body>
-
 
     <style>
         html,

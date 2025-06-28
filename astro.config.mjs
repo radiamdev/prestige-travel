@@ -14,10 +14,11 @@ export default defineConfig({
         }),
     ],
     i18n: {
-        defaultLocale: 'en', // Default language
-        locales: ['en', 'it', 'de'], // Supported languages
+        locales: ["en", "de"], // Supported languages
+        defaultLocale: "en", // Default locale (fallback)
+    
         routing: {
-            prefixDefaultLocale: true, // Ensures all routes include the locale (e.g., /en/gallery, /it/gallery, /de/gallery). If set to false, the default locale (en) would omit the prefix (e.g., /gallery).
+          prefixDefaultLocale: true, // Ensures that default locale is prefixed as well, more Ensures all routes include the locale (e.g., /en/gallery, /it/gallery, /de/gallery). If set to false, the default locale (en) would omit the prefix (e.g., /gallery).
         },
-    },
+      },
 })
