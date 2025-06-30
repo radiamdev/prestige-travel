@@ -2,14 +2,22 @@
 import Icon1 from '../../../assets/icons/cibler.svg'
 import Icon2 from '../../../assets/icons/team-building.svg'
 import Icon3 from '../../../assets/icons/proposition.svg'
+
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
 ---
 
 <section id="about-us" class="bg-white lg:px-24 px-6 lg:py-16 py-12 space-y-8">
     <div class="max-w-2xl mx-auto space-y-6">
         <p class="text-black font-bold text-center">
-            Learn more about our agency
+            {t('homePage.aboutUsSection.subtitle')}
         </p>
-        <h1 class="text-primary text-5xl font-bold text-center">About Us</h1>
+        <h1 class="text-primary text-5xl font-bold text-center">
+            {t('homePage.aboutUsSection.title')}
+        </h1>
         <p class="text-black/70 text-center">
             Learn more about who we are and what drives us. We are a passionate
             team based in Madagascar, committed to offering meaningful travel

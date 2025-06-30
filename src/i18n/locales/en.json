@@ -1,0 +1,13 @@
+{
+    "homePage": {
+        "aboutUsSection": {
+            "title": "About Us",
+            "subtitle": "Learn more about our agency"
+        }
+    },
+    "nav": {
+        "home": "Home",
+        "hello": "Hello",
+        "twitter": "Twitter"
+    }
+}
