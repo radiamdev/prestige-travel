@@ -1,4 +1,6 @@
 ---
+import ScrollToTopButton from "../components/common/ScrollToTopButton.astro"
+
 // Props attendues pour les métadonnées
 const {
     title = 'Prestige Travel',
@@ -19,6 +21,7 @@ const {
 
     <body>
         <slot />
+        <ScrollToTopButton />
     </body>
 
     <style>
