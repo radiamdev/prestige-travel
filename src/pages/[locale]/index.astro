@@ -9,8 +9,8 @@ import TypesOfTravelSection from '../../components/sections/homepage/TypesOfTrav
 import GallerySection from '../../components/sections/homepage/GallerySection.astro'
 import ContactUsSection from '../../components/sections/homepage/ContactUsSection.astro'
 import Footer from '../../components/layout/Footer.astro'
-import { getLangFromUrl, useTranslations } from '../../i18n/utils'
 import LanguagePicker from '../../components/common/LanguagePicker.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n'
 
 const pageTitle = 'Welcome to Prestige Travel Madagascar'
 const pageDescription =
@@ -20,7 +20,12 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
 export async function getStaticPaths() {
-    return [{ params: { locale: 'en' } }, { params: { locale: 'de' } }]
+    return [
+        { params: { locale: 'en' } },
+        { params: { locale: 'de' } },
+        { params: { locale: 'fr' } },
+        { params: { locale: 'it' } },
+    ]
 }
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -36,10 +41,11 @@ export async function getStaticPaths() {
             <li><a href={`/${lang}/about/`}>{t('nav.hello')}</a></li>
             <li>
                 <a href="https://twitter.com/astrodotbuild"
-                    >{t('nav.twitter')}</a>
+                    >{t('nav.twitter')}</a
+                >
             </li>
         </ul>
-        <AboutUsSection />
+        <AboutUsSection t={t} />
         <ToursAndTrips />
         <CarRentalSection />
         <TypesOfTravelSection />

@@ -1,0 +1,13 @@
+{
+    "homePage": {
+        "aboutUsSection": {
+            "title": "Chi siamo",
+            "subtitle": "Scopri di più sulla nostra agenzia"
+        }
+    },
+    "nav": {
+        "home": "Benvenuto",
+        "hello": "Buongiorno",
+        "twitter": "Twitter"
+    }
+}
