@@ -1,4 +1,6 @@
 ---
+import ScrollToTopButton from "../components/common/ScrollToTopButton.astro"
+
 // Props attendues pour les métadonnées
 const {
     title = 'Prestige Travel',
@@ -15,18 +17,19 @@ const {
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
         <meta name="description" content={description} />
-      </head>
-      
+    </head>
+
     <body>
         <slot />
+        <ScrollToTopButton />
     </body>
-</html>
 
-<style>
-    html,
-    body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>
+    <style>
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</html>
