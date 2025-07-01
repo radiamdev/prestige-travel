@@ -12,65 +12,82 @@ import { Image } from 'astro:assets'
 import BookingButton from '../../common/BookingButton.astro'
 import reservationIcon from '../../../assets/icons/reservation.svg'
 
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
+
 const toursAndTrips = [
     {
-        title: 'Southern & Deep South Circuit',
-        subtitle:
-            'From Antsirabe to Tulear and beyond — landscapes, culture, and wildlife.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title1'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle1'
+        ),
         image: img1,
         link: '#!',
     },
     {
-        title: 'Tsingy de Bemaraha Circuit',
-        subtitle:
-            'Adventure to the UNESCO-listed stone forest in western Madagascar.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title2'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle2'
+        ),
         image: img2,
         link: '#!',
     },
     {
-        title: 'Tsiribihina River Descent',
-        subtitle:
-            'Multi-day river trip through wild nature and remote villages.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title3'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle3'
+        ),
         image: img3,
         link: '#!',
     },
     {
-        title: 'Andasibe & Manambato',
-        subtitle:
-            'Rainforest, lakes, and the famous Indri lemur — ideal short escape.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title4'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle4'
+        ),
         image: img4,
         link: '#!',
     },
     {
-        title: 'Sainte Marie Island',
-        subtitle: 'Beaches, whales (in season), and island relaxation.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title5'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle5'
+        ),
         image: img5,
         link: '#!',
     },
     {
-        title: 'Isalo (Ranohira) Circuit',
-        subtitle:
-            'Canyons, natural pools, and desert landscapes in Isalo Park.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title6'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle6'
+        ),
         image: img6,
         link: '#!',
     },
     {
-        title: 'Diego / Majunga Circuit',
-        subtitle:
-            'Northern and western Madagascar: coastal views and local charm.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title7'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle7'
+        ),
         image: img7,
         link: '#!',
     },
     {
-        title: 'Antananarivo City Tour',
-        subtitle: 'Discover the capital’s history, culture, and key landmarks.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title8'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle8'
+        ),
         image: img8,
         link: '#!',
     },
     {
-        title: 'Morondava Circuit',
-        subtitle:
-            'Explore the famous Avenue of the Baobabs, local villages, and the western coast’s laid-back charm — perfect for sunsets and scenic adventures.',
+        title: t('homePage.toursAndTripsSection.toursAndTripsList.title9'),
+        subtitle: t(
+            'homePage.toursAndTripsSection.toursAndTripsList.subtitle9'
+        ),
         image: img9,
         link: '#!',
     },
@@ -84,19 +101,17 @@ const toursAndTrips = [
     <div class="flex lg:flex-row flex-col items-center justify-start gap-8">
         <div class="w-full lg:w-1/2 space-y-2">
             <p class="text-black font-bold lg:text-start text-center">
-                Price Upon Request
+                {t('homePage.toursAndTripsSection.subtitle')}
             </p>
             <h1
                 class="text-primary text-5xl font-bold lg:text-start text-center"
             >
-                Tours & Trips
+                {t('homePage.toursAndTripsSection.title')}
             </h1>
         </div>
         <div class="w-full lg:w-1/2">
             <p class="text-black/70 lg:text-end text-center">
-                We work in partnership with domestic airlines in Madagascar to
-                help you coordinate flights between key destinations like
-                Antananarivo, Morondava, Diego, Tulear, Sainte Marie, and more.
+                {t('homePage.toursAndTripsSection.description')}
             </p>
         </div>
     </div>
@@ -118,7 +133,7 @@ const toursAndTrips = [
 
     <div class="flex lg:justify-start justify-center lg:ml-8">
         <BookingButton
-            label="Contact us"
+            label={t('homePage.toursAndTripsSection.contactUsButton')}
             icon={reservationIcon.src}
             iconAlt="Reservation icon"
             href="/#contact"

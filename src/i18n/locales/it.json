@@ -28,6 +28,32 @@
             "value1": "Retribuzione e trattamento equi per tutti i collaboratori locali",
             "value2": "Priorità a strutture ricettive ecologiche e gestite localmente",
             "value3": "Sostegno a progetti di conservazione e riforestazione"
+        },
+        "toursAndTripsSection": {
+            "subtitle": "Prezzo su richiesta",
+            "title": "Tour e viaggi",
+            "description": "Collaboriamo con compagnie aeree nazionali in Madagascar per aiutarti a coordinare i voli tra destinazioni chiave come Antananarivo, Morondava, Diego, Tulear, Sainte Marie e altre.",
+            "toursAndTripsList": {
+                "title1": "Circuito Sud e Profondo Sud",
+                "subtitle1": "Da Antsirabe a Tulear e oltre — paesaggi, cultura e fauna selvatica.",
+                "title2": "Circuito Tsingy de Bemaraha",
+                "subtitle2": "Avventura nella foresta di pietra classificata UNESCO nel Madagascar occidentale.",
+                "title3": "Discesa del fiume Tsiribihina",
+                "subtitle3": "Viaggio fluviale di più giorni attraverso natura selvaggia e villaggi remoti.",
+                "title4": "Andasibe & Manambato",
+                "subtitle4": "Foresta pluviale, laghi e il famoso lemure Indri — fuga breve ideale.",
+                "title5": "Isola di Sainte Marie",
+                "subtitle5": "Spiagge, balene (in stagione) e relax insulare.",
+                "title6": "Circuito Isalo (Ranohira)",
+                "subtitle6": "Canyon, piscine naturali e paesaggi desertici nel parco di Isalo.",
+                "title7": "Circuito Diego / Majunga",
+                "subtitle7": "Nord e ovest del Madagascar: viste costiere e fascino locale.",
+                "title8": "Tour della città di Antananarivo",
+                "subtitle8": "Scopri la storia, la cultura e i principali monumenti della capitale.",
+                "title9": "Tour della città di Morondava",
+                "subtitle9": "Esplora il famoso Viale dei Baobab, i villaggi locali e il fascino rilassato della costa occidentale — perfetto per tramonti e avventure scenografiche."
+            },
+            "contactUsButton": "Contattaci"
         }
     },
     "footer": {

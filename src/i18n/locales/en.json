@@ -28,6 +28,32 @@
             "value1": "Fair pay and treatment for all local collaborators",
             "value2": "Prioritizing eco-friendly and locally-owned accommodations",
             "value3": "Supporting conservation and reforestation projects"
+        },
+        "toursAndTripsSection": {
+            "subtitle": "Price Upon Request",
+            "title": "Tours & Trips",
+            "description": "We work in partnership with domestic airlines in Madagascar to help you coordinate flights between key destinations like Antananarivo, Morondava, Diego, Tulear, Sainte Marie, and more.",
+            "toursAndTripsList": {
+                "title1": "Southern & Deep South Circuit",
+                "subtitle1": "From Antsirabe to Tulear and beyond — landscapes, culture, and wildlife.",
+                "title2": "Tsingy de Bemaraha Circuit",
+                "subtitle2": "Adventure to the UNESCO-listed stone forest in western Madagascar.",
+                "title3": "Tsiribihina River Descent",
+                "subtitle3": "Multi-day river trip through wild nature and remote villages.",
+                "title4": "Andasibe & Manambato",
+                "subtitle4": "Rainforest, lakes, and the famous Indri lemur — ideal short escape.",
+                "title5": "Sainte Marie Island",
+                "subtitle5": "Beaches, whales (in season), and island relaxation.",
+                "title6": "Isalo (Ranohira) Circuit",
+                "subtitle6": "Canyons, natural pools, and desert landscapes in Isalo Park.",
+                "title7": "Diego / Majunga Circuit",
+                "subtitle7": "Northern and western Madagascar: coastal views and local charm.",
+                "title8": "Antananarivo City Tour",
+                "subtitle8": "Discover the capital’s history, culture, and key landmarks.",
+                "title9": "Morondava City Tour",
+                "subtitle9": "Explore the famous Avenue of the Baobabs, local villages, and the western coast’s laid-back charm — perfect for sunsets and scenic adventures."
+            },
+            "contactUsButton": "Contact Us"
         }
     },
     "footer": {

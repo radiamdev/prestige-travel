@@ -28,6 +28,32 @@
             "value1": "Faire Bezahlung und Behandlung aller lokalen Mitarbeiter",
             "value2": "Bevorzugung umweltfreundlicher und lokal geführter Unterkünfte",
             "value3": "Unterstützung von Naturschutz- und Aufforstungsprojekten"
+        },
+        "toursAndTripsSection": {
+            "subtitle": "Preis auf Anfrage",
+            "title": "Touren & Reisen",
+            "description": "Wir arbeiten mit inländischen Fluggesellschaften in Madagaskar zusammen, um Ihnen bei der Koordination von Flügen zwischen wichtigen Zielen wie Antananarivo, Morondava, Diego, Tulear, Sainte Marie und mehr zu helfen.",
+            "toursAndTripsList": {
+                "title1": "Süd- & Tiefersüd-Rundreise",
+                "subtitle1": "Von Antsirabe nach Tulear und darüber hinaus — Landschaften, Kultur und Tierwelt.",
+                "title2": "Tsingy de Bemaraha Rundreise",
+                "subtitle2": "Abenteuer im UNESCO-gelisteten Steinfeld im Westen Madagaskars.",
+                "title3": "Tsiribihina Flussabfahrt",
+                "subtitle3": "Mehrtägige Flussreise durch wilde Natur und abgelegene Dörfer.",
+                "title4": "Andasibe & Manambato",
+                "subtitle4": "Regenwald, Seen und der berühmte Indri-Lemur — idealer Kurztrip.",
+                "title5": "Insel Sainte Marie",
+                "subtitle5": "Strände, Wale (in der Saison) und Inselentspannung.",
+                "title6": "Isalo (Ranohira) Rundreise",
+                "subtitle6": "Canyons, natürliche Pools und Wüstenlandschaften im Isalo-Park.",
+                "title7": "Diego / Majunga Rundreise",
+                "subtitle7": "Norden und Westen Madagaskars: Küstenansichten und lokaler Charme.",
+                "title8": "Stadtrundfahrt Antananarivo",
+                "subtitle8": "Entdecken Sie die Geschichte, Kultur und wichtigsten Sehenswürdigkeiten der Hauptstadt.",
+                "title9": "Stadtrundfahrt Morondava",
+                "subtitle9": "Erkunden Sie die berühmte Allee der Baobabs, lokale Dörfer und den entspannten Charme der Westküste — perfekt für Sonnenuntergänge und malerische Abenteuer."
+            },
+            "contactUsButton": "Kontaktieren Sie uns"
         }
     },
     "footer": {
