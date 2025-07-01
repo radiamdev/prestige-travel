@@ -18,7 +18,16 @@
         },
         "aboutUsSection": {
             "title": "About Us",
-            "subtitle": "Learn more about our agency"
+            "subtitle": "Learn more about our agency",
+            "description": "Learn more about who we are and what drives us. We are a passionate team based in Madagascar, committed to offering meaningful travel experiences rooted in nature, culture, and respect.",
+            "ourMission": "Our missions",
+            "ourMissionDescription": "We aim to promote responsible tourism that respects   biodiversity, local communities, and cultural heritage. We   create immersive travel experiences that benefit both visitors   and the environment.",
+            "ourTeam": "Meet our team",
+            "ourTeamDescription": "We are a 100% local team of guides, drivers, and travel   coordinators who know southern Madagascar inside out. Our staff  speaks Malagasy, French, English, German and Italian, and is dedicated to making your journey unforgettable.",
+            "ourValues": "Our Values & Commitments",
+            "value1": "Fair pay and treatment for all local collaborators",
+            "value2": "Prioritizing eco-friendly and locally-owned accommodations",
+            "value3": "Supporting conservation and reforestation projects"
         }
     },
     "footer": {

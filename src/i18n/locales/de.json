@@ -18,7 +18,16 @@
         },
         "aboutUsSection": {
             "title": "Über uns",
-            "subtitle": "Erfahren Sie mehr über unsere Agentur"
+            "subtitle": "Erfahren Sie mehr über unsere Agentur",
+            "description": "Erfahren Sie mehr darüber, wer wir sind und was uns antreibt. Wir sind ein leidenschaftliches Team mit Sitz in Madagaskar, das sich darauf konzentriert, bedeutungsvolle Reiseerlebnisse zu bieten, die in Natur, Kultur und Respekt verwurzelt sind.",
+            "ourMission": "Unsere Missionen",
+            "ourMissionDescription": "Wir setzen uns dafür ein, verantwortungsvollen Tourismus zu fördern, der die Biodiversität, lokale Gemeinschaften und das kulturelle Erbe respektiert. Wir schaffen immersive Reiseerlebnisse, die sowohl den Besuchern als auch der Umwelt zugutekommen.",
+            "ourTeam": "Lernen Sie unser Team kennen",
+            "ourTeamDescription": "Wir sind ein 100% lokales Team aus Reiseleitern, Fahrern und Reisekoordinatoren, die den Süden Madagaskars bestens kennen. Unser Personal spricht Malagasy, Französisch, Englisch, Deutsch und Italienisch und ist darauf bedacht, Ihre Reise unvergesslich zu machen.",
+            "ourValues": "Unsere Werte & Verpflichtungen",
+            "value1": "Faire Bezahlung und Behandlung aller lokalen Mitarbeiter",
+            "value2": "Bevorzugung umweltfreundlicher und lokal geführter Unterkünfte",
+            "value3": "Unterstützung von Naturschutz- und Aufforstungsprojekten"
         }
     },
     "footer": {

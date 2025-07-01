@@ -12,8 +12,12 @@ import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
 import LanguagePicker from '../../common/LanguagePicker.astro'
 import { getLangFromUrl, useTranslations } from '../../../i18n'
 
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+interface Props {
+    lang: string
+    t: (key: string) => string
+}
+
+const { t, lang } = Astro.props as Props
 ---
 
 <div class="relative w-full h-screen overflow-hidden bg-white">
@@ -64,7 +68,8 @@ const t = useTranslations(lang)
         <!-- Contenu principal -->
         <div class="space-y-8 max-w-xl mx-auto lg:mt-24 lg:ml-24 ml-8">
             <h1 class="text-5xl font-bold text-start leading-tight">
-                {t('homePage.welcome.welcomeTo')} <br /> Prestige Travel <br /> Madagascar
+                {t('homePage.welcome.welcomeTo')}
+                <br /> Prestige Travel <br /> Madagascar
             </h1>
             <p class="">
                 {t('homePage.welcome.weSpecialize')}
