@@ -1,21 +1,26 @@
 ---
+interface Props {
+    lang: string
+    t: (key: string) => string
+}
 
+const { t, lang } = Astro.props as Props
 ---
 
 <header>
     <nav>
         <ul class="flex items-center space-x-10 text-black font-semibold">
             <li>
-                <a href="/"> Home </a>
+                <a href="/"> {t('global.home')} </a>
             </li>
             <li>
-                <a href="/#about-us"> About Us </a>
+                <a href="/#about-us"> {t('global.aboutUs')} </a>
             </li>
             <li>
-                <a href="/#tours"> Tours & Stays </a>
+                <a href="/#tours"> {t('global.ToursAndStays')} </a>
             </li>
             <li>
-                <a href="/car-rental"> Car Rental </a>
+                <a href={`/${lang}/car-rental/`}> {t('global.carRental')} </a>
             </li>
         </ul>
     </nav>

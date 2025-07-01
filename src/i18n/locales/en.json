@@ -3,9 +3,19 @@
         "notFound": "Page Not Found",
         "notFoundDescription1": "The page you’re looking for doesn’t seem to exist.",
         "notFoundDescription2": "Maybe it was moved or deleted.",
-        "goBack": "Back to Home"
+        "goBack": "Back to Home",
+        "home": "Home",
+        "aboutUs": "About Us",
+        "ToursAndStays": "Tours & Stays",
+        "carRental": "Car Rental"
     },
     "homePage": {
+        "welcome": {
+            "welcomeTo": "Welcome to",
+            "weSpecialize": "We specialize in authentic and naturalist tours in all region of Madagascar. Experience an immersive journey through nature, culture, and adventure.",
+            "booking": "Booking",
+            "explore": "Explore"
+        },
         "aboutUsSection": {
             "title": "About Us",
             "subtitle": "Learn more about our agency"
@@ -14,10 +24,6 @@
     "footer": {
         "weSpecialize": "We specialize in authentic and naturalist tours in Madagascar. ",
         "links": "Links",
-        "home": "Home",
-        "aboutUs": "About Us",
-        "ToursAndStays": "Tours & Stays",
-        "carRental": "Car Rental",
         "contact": "Contact Us",
         "allRightsReserved": "All rights reserved"
     }

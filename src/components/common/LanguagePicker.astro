@@ -10,7 +10,7 @@ const currentLang = getLangFromUrl(Astro.url)
     <button
         type="button"
         onclick="toggleLangMenu()"
-        class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 bg-white rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer"
+        class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 bg-white rounded-full shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer"
     >
         <img
             src={`/flags/${currentLang}.svg`}
@@ -35,7 +35,7 @@ const currentLang = getLangFromUrl(Astro.url)
     <!-- Dropdown menu -->
     <div
         id="language-menu"
-        class="hidden absolute right-0 mt-2 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-50"
+        class="hidden absolute right-0 mt-2 w-36 origin-top-right rounded-xl bg-white shadow-lg ring-1 ring-gray-700 ring-opacity-5 z-50"
     >
         <div class="py-1">
             {

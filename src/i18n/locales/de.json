@@ -3,9 +3,19 @@
         "notFound": "Seite nicht gefunden",
         "notFoundDescription1": "Die Seite, die Sie suchen, scheint nicht zu existieren.",
         "notFoundDescription2": "Vielleicht wurde sie verschoben oder gelöscht.",
-        "goBack": "Zurück zur Startseite"
+        "goBack": "Zurück zur Startseite",
+        "home": "Startseite",
+        "aboutUs": "Über uns",
+        "ToursAndStays": "Touren & Aufenthalte",
+        "carRental": "Autovermietung"
     },
     "homePage": {
+        "welcome": {
+            "welcomeTo": "Willkommen bei",
+            "weSpecialize": "Wir sind spezialisiert auf authentische und naturalistische Touren in allen Regionen Madagaskars. Erleben Sie eine immersive Reise durch Natur, Kultur und Abenteuer.",
+            "booking": "Buchung",
+            "explore": "Entdecken"
+        },
         "aboutUsSection": {
             "title": "Über uns",
             "subtitle": "Erfahren Sie mehr über unsere Agentur"
@@ -14,10 +24,6 @@
     "footer": {
         "weSpecialize": "Wir sind spezialisiert auf authentische und naturalistische Touren in Madagaskar.",
         "links": "Links",
-        "home": "Startseite",
-        "aboutUs": "Über uns",
-        "ToursAndStays": "Touren & Aufenthalte",
-        "carRental": "Autovermietung",
         "contact": "Kontaktieren Sie uns",
         "allRightsReserved": "Alle Rechte vorbehalten"
     }

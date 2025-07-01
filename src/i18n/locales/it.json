@@ -3,9 +3,19 @@
         "notFound": "Pagina non trovata",
         "notFoundDescription1": "La pagina che stai cercando non sembra esistere.",
         "notFoundDescription2": "Forse è stata spostata o eliminata.",
-        "goBack": "Torna alla home"
+        "goBack": "Torna alla home",
+        "home": "Home",
+        "aboutUs": "Chi siamo",
+        "ToursAndStays": "Tour e soggiorni",
+        "carRental": "Noleggio auto"
     },
     "homePage": {
+        "welcome": {
+            "welcomeTo": "Benvenuto a",
+            "weSpecialize": "Siamo specializzati in tour autentici e naturalistici in tutte le regioni del Madagascar. Vivi un viaggio immersivo attraverso natura, cultura e avventura.",
+            "booking": "Prenotazione",
+            "explore": "Esplora"
+        },
         "aboutUsSection": {
             "title": "Chi siamo",
             "subtitle": "Scopri di più sulla nostra agenzia"
@@ -14,10 +24,6 @@
     "footer": {
         "weSpecialize": "Siamo specializzati in tour autentici e naturalistici in Madagascar.",
         "links": "Link",
-        "home": "Home",
-        "aboutUs": "Chi siamo",
-        "ToursAndStays": "Tour e soggiorni",
-        "carRental": "Noleggio auto",
         "contact": "Contattaci",
         "allRightsReserved": "Tutti i diritti riservati"
     }

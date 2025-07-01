@@ -1,13 +1,18 @@
 ---
+interface Props {
+    lang: string
+    t: (key: string) => string
+}
 
+const { t, lang } = Astro.props as Props
 ---
 
 <ul
     id="mobile-menu"
     class="fixed top-0 right-[-100%] w-full h-screen bg-primary text-white flex flex-col items-center justify-center gap-5 text-2xl transition-all duration-300 lg:hidden z-40"
 >
-    <li><a href="/"> Home </a></li>
-    <li><a href="/#about-us"> About Us </a></li>
-    <li><a href="/#tours"> Tours & Stays </a></li>
-    <li><a href="/car-rental"> Car Rental </a></li>
+    <li><a href="/"> {t('global.home')} </a></li>
+    <li><a href="/#about-us">{t('global.aboutUs')}</a></li>
+    <li><a href="/#tours"> {t('global.ToursAndStays')} </a></li>
+    <li><a href={`/${lang}/car-rental/`}> {t('global.carRental')} </a></li>
 </ul>

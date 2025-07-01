@@ -14,9 +14,9 @@ export const translations = {
 
 export const languages = {
     en: 'English',
-    de: 'German',
-    fr: 'French',
-    it: 'Italian',
+    de: 'Deutsch',
+    fr: 'Français',
+    it: 'Italiana',
 }
 
 export function getLangFromUrl(url: URL) {

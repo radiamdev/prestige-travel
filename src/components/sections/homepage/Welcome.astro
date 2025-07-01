@@ -4,13 +4,16 @@ import background1 from '../../../assets/images/home/hero_home.webp'
 import background2 from '../../../assets/images/home/bg_mobile.webp'
 import BookingButton from '../../common/BookingButton.astro'
 import searchIcon from '../../../assets/icons/recherche.svg'
-import reservationIcon from '../../../assets/icons/reservation.svg'
 import logo from '../../../assets/logo.webp'
 import trio from '../../../assets/images/home/trio.webp'
 import Header from '../../layout/Header.astro'
 import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
 import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
 import LanguagePicker from '../../common/LanguagePicker.astro'
+import { getLangFromUrl, useTranslations } from '../../../i18n'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <div class="relative w-full h-screen overflow-hidden bg-white">
@@ -44,7 +47,7 @@ import LanguagePicker from '../../common/LanguagePicker.astro'
         <div
             class="hidden lg:block absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-md ml-6"
         >
-            <Header />
+            <Header lang={lang} t={t} />
         </div>
 
         <!-- Toggle button for mobile menu  -->
@@ -56,22 +59,20 @@ import LanguagePicker from '../../common/LanguagePicker.astro'
         </div>
 
         <!-- Mobile menu panel -->
-        <MobileMenuPanel />
+        <MobileMenuPanel lang={lang} t={t} />
 
         <!-- Contenu principal -->
         <div class="space-y-8 max-w-xl mx-auto lg:mt-24 lg:ml-24 ml-8">
             <h1 class="text-5xl font-bold text-start leading-tight">
-                Welcome to <br /> Prestige Travel <br /> Madagascar
+                {t('homePage.welcome.welcomeTo')} <br /> Prestige Travel <br /> Madagascar
             </h1>
             <p class="">
-                We specialize in authentic and naturalist tours in the southern
-                region of Madagascar. Experience an immersive journey through
-                nature, culture, and adventure.
+                {t('homePage.welcome.weSpecialize')}
             </p>
             <!-- Explore button -->
             <div class="flex justify-start">
                 <BookingButton
-                    label="Explore"
+                    label={t('homePage.welcome.explore')}
                     icon={searchIcon.src}
                     iconAlt="Reservation icon"
                     className="mt-0"
@@ -83,7 +84,7 @@ import LanguagePicker from '../../common/LanguagePicker.astro'
         <!-- Booking button or Language picker -->
         <div class="hidden lg:block absolute top-12 right-24">
             <!-- <BookingButton
-                label="Booking"
+                label={t('homePage.welcome.booking')}
                 icon={reservationIcon.src}
                 iconAlt="Reservation icon"
                 href="/car-rental#booknow"
