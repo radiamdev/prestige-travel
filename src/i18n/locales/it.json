@@ -86,6 +86,11 @@
                 "detail8": "➤ Sicuro, puntuale e confortevole"
             },
             "bookingButton": "Prenota ora"
+        },
+        "gallerySection": {
+            "subtitle": "Scopri il Madagascar attraverso il nostro obiettivo",
+            "title": "Galleria",
+            "description": "Un viaggio inizia con una singola immagine. Esplora i paesaggi mozzafiato, la fauna unica, la cultura vibrante e i momenti memorabili catturati durante i nostri veri tour nel sud del Madagascar."
         }
     },
     "footer": {

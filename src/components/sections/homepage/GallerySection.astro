@@ -1,19 +1,23 @@
 ---
 import GalleryBlock from './GalleryBlock'
+
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
 ---
 
 <section id="" class="bg-white lg:px-24 px-6 py-16 space-y-6">
     <div class="lg:w-[60%] w-full space-y-4">
         <p class="text-black font-bold lg:text-start text-center">
-            Discover Madagascar Through Our Lens
+            {t('homePage.gallerySection.subtitle')}
         </p>
         <h1 class="text-primary text-5xl font-bold lg:text-start text-center">
-            Gallery
+            {t('homePage.gallerySection.title')}
         </h1>
         <p class="text-black/70 lg:text-start text-center">
-            A journey begins with a single image. Explore the stunning
-            landscapes, unique wildlife, vibrant culture, and memorable moments
-            captured during our real tours across southern Madagascar.
+            {t('homePage.gallerySection.description')}
         </p>
     </div>
     <div class="flex lg:flex-row flex-col items-center gap-4">

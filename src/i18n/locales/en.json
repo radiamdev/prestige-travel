@@ -86,6 +86,11 @@
                 "detail8": "➤ Safe, timely, and comfortable"
             },
             "bookingButton": "Book Now"
+        },
+        "gallerySection": {
+            "subtitle": "Discover Madagascar Through Our Lens",
+            "title": "Gallery",
+            "description": "A journey begins with a single image. Explore the stunning landscapes, unique wildlife, vibrant culture, and memorable moments captured during our real tours across southern Madagascar."
         }
     },
     "footer": {
