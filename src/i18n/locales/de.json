@@ -66,6 +66,26 @@
             "list4": "Private Transfers (Flughafen, Stadt-zu-Stadt) verfügbar",
             "description2": "Enthält Mietbedingungen, Preise und Online-Buchungsformular.",
             "bookingButton": "Jetzt buchen"
+        },
+        "typesOfTravelSection": {
+            "subtitle": "Verfügbare Pakete:",
+            "title": "Arten von Reisepaketen",
+            "travelPackagesList": {
+                "title1": "All-Inclusive",
+                "detail1": "➤ Unterkunft, Mahlzeiten, Transport & geführte Touren inklusive",
+                "title2": "Halbpension",
+                "detail2": "➤ Unterkunft + Frühstück und Abendessen",
+                "title3": "Gruppenreise",
+                "detail3": "➤ Gemeinsame Touren mit anderen Reisenden",
+                "detail4": "➤ Gesellige, budgetfreundliche Atmosphäre",
+                "title4": "Reise mit Autovermietung",
+                "detail5": "➤ Selbstfahrer- oder fahrerunterstützte Touren",
+                "detail6": "➤ 4x4s, Minibusse, Klimaanlage, Versicherung inklusive",
+                "title5": "Private Transfers",
+                "detail7": "➤ Abholung/Abgabe am Flughafen, Städteverbindungen, Parks",
+                "detail8": "➤ Sicher, pünktlich und komfortabel"
+            },
+            "bookingButton": "Jetzt buchen"
         }
     },
     "footer": {

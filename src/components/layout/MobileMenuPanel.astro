@@ -1,10 +1,8 @@
 ---
-interface Props {
-    lang: string
-    t: (key: string) => string
-}
+import { getLangFromUrl, useTranslations } from '../../i18n'
 
-const { t, lang } = Astro.props as Props
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <ul

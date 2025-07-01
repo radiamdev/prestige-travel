@@ -66,6 +66,26 @@
             "list4": "Trasferimenti privati (aeroporto, città a città) disponibili",
             "description2": "Include termini di noleggio, prezzi e modulo di prenotazione online.",
             "bookingButton": "Prenota ora"
+        },
+        "typesOfTravelSection": {
+            "subtitle": "Pacchetti disponibili:",
+            "title": "Tipi di pacchetti di viaggio",
+            "travelPackagesList": {
+                "title1": "Tutto incluso",
+                "detail1": "➤ Alloggio, pasti, trasporto e tour guidati inclusi",
+                "title2": "Mezza pensione",
+                "detail2": "➤ Alloggio + colazione e cena",
+                "title3": "Viaggio di gruppo",
+                "detail3": "➤ Tour condivisi con altri viaggiatori",
+                "detail4": "➤ Atmosfera sociale ed economica",
+                "title4": "Viaggio con noleggio auto",
+                "detail5": "➤ Tour in autonomia o con autista",
+                "detail6": "➤ 4x4, minibus, aria condizionata, assicurazione inclusa",
+                "title5": "Trasferimenti privati",
+                "detail7": "➤ Prelievo/consegna in aeroporto, collegamenti tra città, parchi",
+                "detail8": "➤ Sicuro, puntuale e confortevole"
+            },
+            "bookingButton": "Prenota ora"
         }
     },
     "footer": {

@@ -66,6 +66,26 @@
             "list4": "Private transfers (airport, city-to-city) available",
             "description2": "Includes rental terms, pricing, and online booking form.",
             "bookingButton": "Book Now"
+        },
+        "typesOfTravelSection": {
+            "subtitle": "Available Packages:",
+            "title": "Types of Travel Packages",
+            "travelPackagesList": {
+                "title1": "All-Inclusive",
+                "detail1": "➤ Accommodation, meals, transport & guided tours included",
+                "title2": "Half-Board",
+                "detail2": "➤ Accommodation + breakfast and dinner",
+                "title3": "Group Travel",
+                "detail3": "➤ Shared tours with other travelers",
+                "detail4": "➤ Social, budget-friendly atmosphere",
+                "title4": "Car Rental Travel",
+                "detail5": "➤ Self-drive or driver-assisted tours",
+                "detail6": "➤ 4x4s, minibuses, AC, insurance included",
+                "title5": "Private Transfers",
+                "detail7": "➤ Airport pick-up/drop-off, inter-city, parks",
+                "detail8": "➤ Safe, timely, and comfortable"
+            },
+            "bookingButton": "Book Now"
         }
     },
     "footer": {

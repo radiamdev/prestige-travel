@@ -10,7 +10,6 @@ import Header from '../../layout/Header.astro'
 import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
 import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
 import LanguagePicker from '../../common/LanguagePicker.astro'
-import { getLangFromUrl, useTranslations } from '../../../i18n'
 
 interface Props {
     lang: string
@@ -51,7 +50,7 @@ const { t, lang } = Astro.props as Props
         <div
             class="hidden lg:block absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-md ml-6"
         >
-            <Header lang={lang} t={t} />
+            <Header />
         </div>
 
         <!-- Toggle button for mobile menu  -->
@@ -63,7 +62,7 @@ const { t, lang } = Astro.props as Props
         </div>
 
         <!-- Mobile menu panel -->
-        <MobileMenuPanel lang={lang} t={t} />
+        <MobileMenuPanel />
 
         <!-- Contenu principal -->
         <div class="space-y-8 max-w-xl mx-auto lg:mt-24 lg:ml-24 ml-8">

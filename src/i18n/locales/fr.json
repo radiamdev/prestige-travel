@@ -66,6 +66,26 @@
             "list4": "Transferts privés (aéroport, ville à ville) disponibles",
             "description2": "Inclut les conditions de location, les tarifs et le formulaire de réservation en ligne.",
             "bookingButton": "Réserver maintenant"
+        },
+        "typesOfTravelSection": {
+            "subtitle": "Forfaits disponibles :",
+            "title": "Types de forfaits de voyage",
+            "travelPackagesList": {
+                "title1": "Tout compris",
+                "detail1": "➤ Hébergement, repas, transport et visites guidées inclus",
+                "title2": "Demi-pension",
+                "detail2": "➤ Hébergement + petit-déjeuner et dîner",
+                "title3": "Voyage en groupe",
+                "detail3": "➤ Circuits partagés avec d'autres voyageurs",
+                "detail4": "➤ Ambiance conviviale et économique",
+                "title4": "Voyage avec location de voiture",
+                "detail5": "➤ Circuits en conduite autonome ou avec chauffeur",
+                "detail6": "➤ 4x4, minibus, climatisation, assurance incluse",
+                "title5": "Transferts privés",
+                "detail7": "➤ Prise en charge/dépose à l'aéroport, trajets inter-villes, parcs",
+                "detail8": "➤ Sûr, ponctuel et confortable"
+            },
+            "bookingButton": "Réserver maintenant"
         }
     },
     "footer": {

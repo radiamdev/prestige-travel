@@ -9,39 +9,50 @@ import Icon5 from '../../../assets/icons/transfert.svg'
 import reservationIcon from '../../../assets/icons/reservation.svg'
 import BookingButton from '../../common/BookingButton.astro'
 
+interface Props {
+    lang: string
+    t: (key: string) => string
+}
+
+const { t, lang } = Astro.props as Props
+
 const travelPackages = [
     {
         icon: Icon1,
-        title: 'All-Inclusive',
-        details: ['➤ Accommodation, meals, transport & guided tours included'],
+        title: t('homePage.typesOfTravelSection.travelPackagesList.title1'),
+        details: [
+            t('homePage.typesOfTravelSection.travelPackagesList.detail1'),
+        ],
     },
     {
         icon: Icon2,
-        title: 'Half-Board',
-        details: ['➤ Accommodation + breakfast and dinner'],
+        title: t('homePage.typesOfTravelSection.travelPackagesList.title2'),
+        details: [
+            t('homePage.typesOfTravelSection.travelPackagesList.detail2'),
+        ],
     },
     {
         icon: Icon3,
-        title: 'Group Travel',
+        title: t('homePage.typesOfTravelSection.travelPackagesList.title3'),
         details: [
-            '➤ Shared tours with other travelers',
-            '➤ Social, budget-friendly atmosphere',
+            t('homePage.typesOfTravelSection.travelPackagesList.detail3'),
+            t('homePage.typesOfTravelSection.travelPackagesList.detail4'),
         ],
     },
     {
         icon: Icon4,
-        title: 'Car Rental Travel',
+        title: t('homePage.typesOfTravelSection.travelPackagesList.title4'),
         details: [
-            '➤ Self-drive or driver-assisted tours',
-            '➤ 4x4s, minibuses, AC, insurance included',
+            t('homePage.typesOfTravelSection.travelPackagesList.detail5'),
+            t('homePage.typesOfTravelSection.travelPackagesList.detail6'),
         ],
     },
     {
         icon: Icon5,
-        title: 'Private Transfers',
+        title: t('homePage.typesOfTravelSection.travelPackagesList.title5'),
         details: [
-            '➤ Airport pick-up/drop-off, inter-city, parks',
-            '➤ Safe, timely, and comfortable',
+            t('homePage.typesOfTravelSection.travelPackagesList.detail7'),
+            t('homePage.typesOfTravelSection.travelPackagesList.detail8'),
         ],
     },
 ]
@@ -90,12 +101,12 @@ const travelPackages = [
     <!-- Contenu à droite -->
     <div class="relative z-10 lg:w-1/2 w-full space-y-4">
         <p class="text-white font-bold lg:text-start text-center opacity-90">
-            Available Packages:
+            {t('homePage.typesOfTravelSection.subtitle')}
         </p>
         <h1
-            class="text-pink-secondary text-5xl font-bold leading-tight lg:text-start text-center drop-shadow-2xl"
+            class="text-pink-secondary text-5xl font-bold leading-tight lg:text-start text-center drop-shadow-2xl whitespace-pre-line"
         >
-            Types of Travel <br />Packages
+            {t('homePage.typesOfTravelSection.title')}
         </h1>
 
         <div
@@ -128,11 +139,11 @@ const travelPackages = [
         <!-- Booking button -->
         <div class="flex lg:justify-start justify-center">
             <BookingButton
-                label="Booking"
+                label={t('homePage.typesOfTravelSection.bookingButton')}
                 icon={reservationIcon.src}
                 iconAlt="Reservation icon"
                 className="mt-8 shadow-2xl hover:shadow-pink-secondary/20 transition-all duration-300"
-                href="/car-rental#booknow"
+                href={`/${lang}/car-rental#booknow`}
             />
         </div>
     </div>
