@@ -5,9 +5,14 @@
             "subtitle": "En savoir plus sur notre agence"
         }
     },
-    "nav": {
-        "home": "Accueil",
-        "hello": "Bonjour",
-        "twitter": "Twitter"
-    }
+    "footer": {
+    "weSpecialize": "Nous sommes spécialisés dans les circuits authentiques et naturalistes à Madagascar.",
+    "links": "Liens",
+    "home": "Accueil",
+    "aboutUs": "À propos de nous",
+    "ToursAndStays": "Circuits et séjours",
+    "carRental": "Location de voitures",
+    "contact": "Contactez-nous",
+    "allRightsReserved": "Tous droits réservés"
+}
 }

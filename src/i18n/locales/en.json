@@ -5,9 +5,14 @@
             "subtitle": "Learn more about our agency"
         }
     },
-    "nav": {
+    "footer": {
+        "weSpecialize": "We specialize in authentic and naturalist tours in Madagascar. ",
+        "links": "Links",
         "home": "Home",
-        "hello": "Hello",
-        "twitter": "Twitter"
+        "aboutUs": "About Us",
+        "ToursAndStays": "Tours & Stays",
+        "carRental": "Car Rental",
+        "contact": "Contact Us",
+        "allRightsReserved": "All rights reserved"
     }
 }

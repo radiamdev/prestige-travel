@@ -5,9 +5,14 @@
             "subtitle": "Scopri di più sulla nostra agenzia"
         }
     },
-    "nav": {
-        "home": "Benvenuto",
-        "hello": "Buongiorno",
-        "twitter": "Twitter"
+    "footer": {
+        "weSpecialize": "Siamo specializzati in tour autentici e naturalistici in Madagascar.",
+        "links": "Link",
+        "home": "Home",
+        "aboutUs": "Chi siamo",
+        "ToursAndStays": "Tour e soggiorni",
+        "carRental": "Noleggio auto",
+        "contact": "Contattaci",
+        "allRightsReserved": "Tutti i diritti riservati"
     }
 }

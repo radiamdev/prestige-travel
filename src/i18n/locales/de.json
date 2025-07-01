@@ -5,10 +5,14 @@
             "subtitle": "Erfahren Sie mehr über unsere Agentur"
         }
     },
-    "nav": {
-      "home": "Start",
-      "hello": "Hallo",
-      "twitter": "Twitter"
+    "footer": {
+        "weSpecialize": "Wir sind spezialisiert auf authentische und naturalistische Touren in Madagaskar.",
+        "links": "Links",
+        "home": "Startseite",
+        "aboutUs": "Über uns",
+        "ToursAndStays": "Touren & Aufenthalte",
+        "carRental": "Autovermietung",
+        "contact": "Kontaktieren Sie uns",
+        "allRightsReserved": "Alle Rechte vorbehalten"
     }
-  }
-  
+}
