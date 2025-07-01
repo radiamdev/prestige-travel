@@ -1,4 +1,10 @@
 {
+    "global": {
+        "notFound": "Pagina non trovata",
+        "notFoundDescription1": "La pagina che stai cercando non sembra esistere.",
+        "notFoundDescription2": "Forse è stata spostata o eliminata.",
+        "goBack": "Torna alla home"
+    },
     "homePage": {
         "aboutUsSection": {
             "title": "Chi siamo",
