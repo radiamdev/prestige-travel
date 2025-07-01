@@ -9,7 +9,6 @@ import TypesOfTravelSection from '../../components/sections/homepage/TypesOfTrav
 import GallerySection from '../../components/sections/homepage/GallerySection.astro'
 import ContactUsSection from '../../components/sections/homepage/ContactUsSection.astro'
 import Footer from '../../components/layout/Footer.astro'
-import LanguagePicker from '../../components/common/LanguagePicker.astro'
 import { getLangFromUrl, useTranslations } from '../../i18n'
 
 const pageTitle = 'Welcome to Prestige Travel Madagascar'
@@ -35,16 +34,6 @@ export async function getStaticPaths() {
 <Layout title={pageTitle} description={pageDescription}>
     <main>
         <Welcome />
-        <LanguagePicker />
-        <ul>
-            <li><a href={`/${lang}/home/`}>{t('nav.home')}</a></li>
-            <li><a href={`/${lang}/about/`}>{t('nav.hello')}</a></li>
-            <li>
-                <a href="https://twitter.com/astrodotbuild"
-                    >{t('nav.twitter')}</a
-                >
-            </li>
-        </ul>
         <AboutUsSection t={t} />
         <ToursAndTrips />
         <CarRentalSection />
@@ -52,5 +41,5 @@ export async function getStaticPaths() {
         <GallerySection />
         <ContactUsSection />
     </main>
-    <Footer />
+    <Footer lang={lang} t={t} />
 </Layout>

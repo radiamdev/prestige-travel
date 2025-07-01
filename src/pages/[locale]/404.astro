@@ -1,12 +1,25 @@
 ---
-import '../styles/global.css'
+import '../../styles/global.css'
 import { Image } from 'astro:assets'
-import notFoundImage from '../assets/404.svg'
+import notFoundImage from '../../assets/404.svg'
+import { getLangFromUrl, useTranslations } from '../../i18n'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+export async function getStaticPaths() {
+    return [
+        { params: { locale: 'en' } },
+        { params: { locale: 'de' } },
+        { params: { locale: 'fr' } },
+        { params: { locale: 'it' } },
+    ]
+}
 ---
 
 <html lang="en">
     <head>
-        <title>404 - Page Not Found</title>
+        <title>404 - {t('global.notFound')}</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
@@ -21,20 +34,23 @@ import notFoundImage from '../assets/404.svg'
                     class="w-[70%] h-auto mb-8 drop-shadow-lg"
                 />
             </div>
-            <div class="lg:w-1/2 w-full flex flex-col items-center justify-center">
+            <div
+                class="lg:w-1/2 w-full flex flex-col items-center justify-center"
+            >
                 <h1 class="text-6xl font-extrabold text-primary mb-2">404</h1>
                 <h2 class="text-2xl font-semibold text-grey-primary mb-4">
-                    Page Not Found
+                    {t('global.notFound')}
                 </h2>
                 <p class="text-grey-primary text-center mb-6">
-                    The page you’re looking for doesn’t seem to exist. <br />
-                    Maybe it was moved or deleted.
+                    {t('global.notFoundDescription1')}
+                    <br />
+                    {t('global.notFoundDescription2')}
                 </p>
                 <a
                     href="/"
                     class="inline-block px-6 py-3 bg-pink-secondary text-white rounded-full shadow-lg hover:bg-[#d5ae7a] transition"
                 >
-                    ⬅ Back to Home
+                    ⬅ {t('global.goBack')}
                 </a>
             </div>
         </main>
