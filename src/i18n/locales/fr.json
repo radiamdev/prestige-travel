@@ -1,13 +1,24 @@
 {
+    "global": {
+        "notFound": "Page non trouvée",
+        "notFoundDescription1": "La page que vous cherchez ne semble pas exister.",
+        "notFoundDescription2": "Peut-être a-t-elle été déplacée ou supprimée.",
+        "goBack": "Retour à l'accueil"
+    },
     "homePage": {
         "aboutUsSection": {
             "title": "A propos de nous",
             "subtitle": "En savoir plus sur notre agence"
         }
     },
-    "nav": {
+    "footer": {
+        "weSpecialize": "Nous sommes spécialisés dans les circuits authentiques et naturalistes à Madagascar.",
+        "links": "Liens",
         "home": "Accueil",
-        "hello": "Bonjour",
-        "twitter": "Twitter"
+        "aboutUs": "À propos de nous",
+        "ToursAndStays": "Circuits et séjours",
+        "carRental": "Location de voitures",
+        "contact": "Contactez-nous",
+        "allRightsReserved": "Tous droits réservés"
     }
 }

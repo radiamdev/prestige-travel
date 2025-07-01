@@ -7,6 +7,14 @@ import Web from '../../assets/icons/web.svg'
 import Facebook from '../../assets/icons/facebook.svg'
 import Mail from '../../assets/icons/mail.svg'
 import PrestigeInfo from '../sections/homepage/PrestigeInfo.astro'
+import { getLangFromUrl } from '../../i18n'
+
+interface Props {
+    lang: string
+    t: (key: string) => string
+}
+
+const { t, lang } = Astro.props as Props
 ---
 
 <footer class="relative bg-primary lg:px-24 px-6 lg:pt-28 pb-4">
@@ -25,7 +33,7 @@ import PrestigeInfo from '../sections/homepage/PrestigeInfo.astro'
                 fetchpriority="high"
             />
             <p class="text-white lg:text-start text-center">
-                We specialize in authentic and naturalist tours in Madagascar.
+                {t('footer.weSpecialize')}
             </p>
             <div class="flex items-center gap-4">
                 <a href="/" target="_blank" rel="noreferrer noopener">
@@ -43,24 +51,26 @@ import PrestigeInfo from '../sections/homepage/PrestigeInfo.astro'
             </div>
         </div>
         <div class="flex flex-col lg:items-start items-center gap-6 lg:pl-28">
-            <h3 class="text-white font-bold text-2xl">Links</h3>
+            <h3 class="text-white font-bold text-2xl">{t('footer.links')}</h3>
             <ul class="text-white lg:text-start text-center space-y-3">
                 <li>
-                    <a href="/"> Home </a>
+                    <a href="/"> {t('footer.home')} </a>
                 </li>
                 <li>
-                    <a href="/#about-us"> About Us </a>
+                    <a href="/#about-us"> {t('footer.aboutUs')}</a>
                 </li>
                 <li>
-                    <a href="/#tours"> Tours & Stays </a>
+                    <a href="/#tours"> {t('footer.ToursAndStays')}</a>
                 </li>
                 <li>
-                    <a href="/car-rental"> Car Rental </a>
+                    <a href={`/${lang}/car-rental/`}>
+                        {t('footer.carRental')}</a
+                    >
                 </li>
             </ul>
         </div>
         <div class="flex flex-col lg:items-start items-center gap-6">
-            <h3 class="text-white font-bold text-2xl">Contact Us</h3>
+            <h3 class="text-white font-bold text-2xl">{t('footer.contact')}</h3>
             <ul class="text-white lg:text-start text-center space-y-3">
                 <li>contact@prestige-travel.mg</li>
                 <li>+261 34 55 727 16 / +261 38 24 977 04</li>
@@ -70,8 +80,9 @@ import PrestigeInfo from '../sections/homepage/PrestigeInfo.astro'
     </div>
     <div class="border-t-2 border-white pt-4">
         <p class="text-white text-center">
-            © {new Date().getFullYear()} Prestige Travel Madagascar. All rights
-            reserved.
+            © {new Date().getFullYear()} Prestige Travel Madagascar. {
+                t('footer.allRightsReserved')
+            }
         </p>
     </div>
 </footer>

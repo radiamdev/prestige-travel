@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css'
+import '../../styles/global.css'
 import Layout from '../../layouts/Layout.astro'
 import HeroCarRentalPage from '../../components/sections/carrentalpage/HeroCarRentalPage.astro'
 import WhatsIncludedSection from '../../components/sections/carrentalpage/WhatsIncludedSection.astro'
@@ -8,6 +8,19 @@ import PaymentTerms from '../../components/sections/carrentalpage/PaymentTerms.a
 import SetupOrEmptySection from '../../components/sections/carrentalpage/SetupOrEmptySection.astro'
 import BookNowSection from '../../components/sections/carrentalpage/BookNowSection.astro'
 import Footer from '../../components/layout/Footer.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+export async function getStaticPaths() {
+    return [
+        { params: { locale: 'en' } },
+        { params: { locale: 'de' } },
+        { params: { locale: 'fr' } },
+        { params: { locale: 'it' } },
+    ]
+}
 
 const pageTitle = 'Car Rental | Prestige Travel Madagascar'
 const pageDescription =
@@ -23,5 +36,5 @@ const pageDescription =
         <SetupOrEmptySection />
         <BookNowSection />
     </main>
-    <Footer />
+    <Footer lang={lang} t={t} />
 </Layout>
