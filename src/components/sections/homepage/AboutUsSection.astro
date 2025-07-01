@@ -19,45 +19,40 @@ const { t } = Astro.props as Props
             {t('homePage.aboutUsSection.title')}
         </h1>
         <p class="text-black/70 text-center">
-            Learn more about who we are and what drives us. We are a passionate
-            team based in Madagascar, committed to offering meaningful travel
-            experiences rooted in nature, culture, and respect.
+            {t('homePage.aboutUsSection.description')}
         </p>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-0">
         <div class="flex flex-col items-center justify-center gap-4 p-6">
             <Icon1 width={64} />
-            <h4 class="font-semibold text-lg text-black">Our missions</h4>
+            <h4 class="font-semibold text-lg text-black">
+                {t('homePage.aboutUsSection.ourMission')}
+            </h4>
             <p class="text-center text-black/70">
-                We aim to promote responsible tourism that respects
-                biodiversity, local communities, and cultural heritage. We
-                create immersive travel experiences that benefit both visitors
-                and the environment.
+                {t('homePage.aboutUsSection.ourMissionDescription')}
             </p>
         </div>
         <div class="flex flex-col items-center justify-center gap-4 p-6">
             <Icon2 width={64} />
-            <h4 class="font-semibold text-lg text-black">Meet our team</h4>
+            <h4 class="font-semibold text-lg text-black">
+                {t('homePage.aboutUsSection.ourTeam')}
+            </h4>
             <p class="text-center text-black/70">
-                We are a 100% local team of guides, drivers, and travel
-                coordinators who know southern Madagascar inside out. Our staff
-                speaks Malagasy, French, English, German and Italian, and is
-                dedicated to making your journey unforgettable.
+                {t('homePage.aboutUsSection.ourTeamDescription')}
             </p>
         </div>
         <div class="flex flex-col items-center justify-center gap-4 p-6">
             <Icon3 width={64} />
             <h4 class="font-semibold text-lg text-black">
-                Our Values & Commitments
+                {t('homePage.aboutUsSection.ourValues')}
             </h4>
             <p>
                 <ul class="list-disc text-black/70">
-                    <li>Fair pay and treatment for all local collaborators</li>
+                    <li>{t('homePage.aboutUsSection.value1')}</li>
                     <li>
-                        Prioritizing eco-friendly and locally-owned
-                        accommodations
+                        {t('homePage.aboutUsSection.value2')}
                     </li>
-                    <li>Supporting conservation and reforestation projects</li>
+                    <li>{t('homePage.aboutUsSection.value3')}</li>
                 </ul>
             </p>
         </div>

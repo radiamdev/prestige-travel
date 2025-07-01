@@ -7,7 +7,6 @@ import Web from '../../assets/icons/web.svg'
 import Facebook from '../../assets/icons/facebook.svg'
 import Mail from '../../assets/icons/mail.svg'
 import PrestigeInfo from '../sections/homepage/PrestigeInfo.astro'
-import { getLangFromUrl } from '../../i18n'
 
 interface Props {
     lang: string
@@ -54,17 +53,17 @@ const { t, lang } = Astro.props as Props
             <h3 class="text-white font-bold text-2xl">{t('footer.links')}</h3>
             <ul class="text-white lg:text-start text-center space-y-3">
                 <li>
-                    <a href="/"> {t('footer.home')} </a>
+                    <a href="/"> {t('global.home')} </a>
                 </li>
                 <li>
-                    <a href="/#about-us"> {t('footer.aboutUs')}</a>
+                    <a href="/#about-us"> {t('global.aboutUs')}</a>
                 </li>
                 <li>
-                    <a href="/#tours"> {t('footer.ToursAndStays')}</a>
+                    <a href="/#tours"> {t('global.ToursAndStays')}</a>
                 </li>
                 <li>
                     <a href={`/${lang}/car-rental/`}>
-                        {t('footer.carRental')}</a
+                        {t('global.carRental')}</a
                     >
                 </li>
             </ul>

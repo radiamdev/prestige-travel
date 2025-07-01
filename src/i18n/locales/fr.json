@@ -3,21 +3,103 @@
         "notFound": "Page non trouvée",
         "notFoundDescription1": "La page que vous cherchez ne semble pas exister.",
         "notFoundDescription2": "Peut-être a-t-elle été déplacée ou supprimée.",
-        "goBack": "Retour à l'accueil"
+        "goBack": "Retour à l'accueil",
+        "home": "Accueil",
+        "aboutUs": "À propos de nous",
+        "ToursAndStays": "Circuits et séjours",
+        "carRental": "Location de voitures"
     },
     "homePage": {
+        "welcome": {
+            "welcomeTo": "Bienvenue à",
+            "weSpecialize": "Nous sommes spécialisés dans les circuits authentiques et naturalistes dans toutes les régions de Madagascar. Vivez un voyage immersif à travers la nature, la culture et l'aventure.",
+            "booking": "Réservation",
+            "explore": "Explorer"
+        },
         "aboutUsSection": {
-            "title": "A propos de nous",
-            "subtitle": "En savoir plus sur notre agence"
+            "title": "À propos de nous",
+            "subtitle": "En savoir plus sur notre agence",
+            "description": "Découvrez qui nous sommes et ce qui nous motive. Nous sommes une équipe passionnée basée à Madagascar, engagée à offrir des expériences de voyage significatives ancrées dans la nature, la culture et le respect.",
+            "ourMission": "Nos missions",
+            "ourMissionDescription": "Nous visons à promouvoir un tourisme responsable qui respecte la biodiversité, les communautés locales et l'héritage culturel. Nous créons des expériences de voyage immersives qui profitent à la fois aux visiteurs et à l'environnement.",
+            "ourTeam": "Rencontrez notre équipe",
+            "ourTeamDescription": "Nous sommes une équipe 100% locale de guides, chauffeurs et coordinateurs de voyage qui connaissent le sud de Madagascar sur le bout des doigts. Notre personnel parle malgache, français, anglais, allemand et italien, et est dédié à rendre votre voyage inoubliable.",
+            "ourValues": "Nos valeurs et engagements",
+            "value1": "Rémunération et traitement équitables pour tous les collaborateurs locaux",
+            "value2": "Priorité aux hébergements écologiques et gérés localement",
+            "value3": "Soutien aux projets de conservation et de reboisement"
+        },
+        "toursAndTripsSection": {
+            "subtitle": "Prix sur demande",
+            "title": "Circuits et voyages",
+            "description": "Nous travaillons en partenariat avec des compagnies aériennes nationales à Madagascar pour vous aider à coordonner les vols entre des destinations clés comme Antananarivo, Morondava, Diego, Tuléar, Sainte Marie, et plus encore.",
+            "toursAndTripsList": {
+                "title1": "Circuit Sud et Grand Sud",
+                "subtitle1": "D’Antsirabe à Tuléar et au-delà — paysages, culture et faune.",
+                "title2": "Circuit Tsingy de Bemaraha",
+                "subtitle2": "Aventure dans la forêt de pierre classée à l’UNESCO dans l’ouest de Madagascar.",
+                "title3": "Descente de la rivière Tsiribihina",
+                "subtitle3": "Voyage de plusieurs jours en rivière à travers une nature sauvage et des villages reculés.",
+                "title4": "Andasibe & Manambato",
+                "subtitle4": "Forêt tropicale, lacs et le célèbre lémurien Indri — escapade courte idéale.",
+                "title5": "Île Sainte Marie",
+                "subtitle5": "Plages, baleines (en saison) et détente insulaire.",
+                "title6": "Circuit Isalo (Ranohira)",
+                "subtitle6": "Canyons, piscines naturelles et paysages désertiques dans le parc d’Isalo.",
+                "title7": "Circuit Diego / Majunga",
+                "subtitle7": "Nord et ouest de Madagascar : vues côtières et charme local.",
+                "title8": "Visite de la ville d’Antananarivo",
+                "subtitle8": "Découvrez l’histoire, la culture et les principaux monuments de la capitale.",
+                "title9": "Visite de la ville de Morondava",
+                "subtitle9": "Explorez la célèbre Avenue des Baobabs, les villages locaux et le charme décontracté de la côte ouest — parfait pour les couchers de soleil et les aventures pittoresques."
+            },
+            "contactUsButton": "Contactez-nous"
+        },
+        "carRentalSection": {
+            "experimented": "Expérimenté",
+            "subtitle": "Explorez en toute liberté",
+            "title": "Location de voitures",
+            "description": "Découvrez Madagascar à votre rythme avec notre service de location de voitures flexible et fiable. Que vous vous dirigiez vers le majestueux sud, exploriez des parcs nationaux reculés ou rouliez le long de la magnifique côte, Prestiige Travel Madagascar propose le véhicule adapté à votre voyage.",
+            "list1": "4x4, minibus ou voitures économiques disponibles",
+            "list2": "Avec ou sans chauffeur professionnel",
+            "list3": "Locations à la journée ou forfaits à long terme",
+            "list4": "Transferts privés (aéroport, ville à ville) disponibles",
+            "description2": "Inclut les conditions de location, les tarifs et le formulaire de réservation en ligne.",
+            "bookingButton": "Réserver maintenant"
+        },
+        "typesOfTravelSection": {
+            "subtitle": "Forfaits disponibles :",
+            "title": "Types de forfaits de voyage",
+            "travelPackagesList": {
+                "title1": "Tout compris",
+                "detail1": "➤ Hébergement, repas, transport et visites guidées inclus",
+                "title2": "Demi-pension",
+                "detail2": "➤ Hébergement + petit-déjeuner et dîner",
+                "title3": "Voyage en groupe",
+                "detail3": "➤ Circuits partagés avec d'autres voyageurs",
+                "detail4": "➤ Ambiance conviviale et économique",
+                "title4": "Voyage avec location de voiture",
+                "detail5": "➤ Circuits en conduite autonome ou avec chauffeur",
+                "detail6": "➤ 4x4, minibus, climatisation, assurance incluse",
+                "title5": "Transferts privés",
+                "detail7": "➤ Prise en charge/dépose à l'aéroport, trajets inter-villes, parcs",
+                "detail8": "➤ Sûr, ponctuel et confortable"
+            },
+            "bookingButton": "Réserver maintenant"
+        },
+        "gallerySection": {
+            "subtitle": "Découvrez Madagascar à travers notre objectif",
+            "title": "Galerie",
+            "description": "Un voyage commence par une seule image. Explorez les paysages époustouflants, la faune unique, la culture vibrante et les moments mémorables capturés lors de nos véritables circuits dans le sud de Madagascar."
+        },
+        "contactUsSection": {
+            "title": "Contactez-nous",
+            "subtitle": "Vous avez une question ou besoin d'un devis ?"
         }
     },
     "footer": {
         "weSpecialize": "Nous sommes spécialisés dans les circuits authentiques et naturalistes à Madagascar.",
         "links": "Liens",
-        "home": "Accueil",
-        "aboutUs": "À propos de nous",
-        "ToursAndStays": "Circuits et séjours",
-        "carRental": "Location de voitures",
         "contact": "Contactez-nous",
         "allRightsReserved": "Tous droits réservés"
     }

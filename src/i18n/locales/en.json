@@ -3,21 +3,103 @@
         "notFound": "Page Not Found",
         "notFoundDescription1": "The page you’re looking for doesn’t seem to exist.",
         "notFoundDescription2": "Maybe it was moved or deleted.",
-        "goBack": "Back to Home"
+        "goBack": "Back to Home",
+        "home": "Home",
+        "aboutUs": "About Us",
+        "ToursAndStays": "Tours & Stays",
+        "carRental": "Car Rental"
     },
     "homePage": {
+        "welcome": {
+            "welcomeTo": "Welcome to",
+            "weSpecialize": "We specialize in authentic and naturalist tours in all region of Madagascar. Experience an immersive journey through nature, culture, and adventure.",
+            "booking": "Booking",
+            "explore": "Explore"
+        },
         "aboutUsSection": {
             "title": "About Us",
-            "subtitle": "Learn more about our agency"
+            "subtitle": "Learn more about our agency",
+            "description": "Learn more about who we are and what drives us. We are a passionate team based in Madagascar, committed to offering meaningful travel experiences rooted in nature, culture, and respect.",
+            "ourMission": "Our missions",
+            "ourMissionDescription": "We aim to promote responsible tourism that respects   biodiversity, local communities, and cultural heritage. We   create immersive travel experiences that benefit both visitors   and the environment.",
+            "ourTeam": "Meet our team",
+            "ourTeamDescription": "We are a 100% local team of guides, drivers, and travel   coordinators who know southern Madagascar inside out. Our staff  speaks Malagasy, French, English, German and Italian, and is dedicated to making your journey unforgettable.",
+            "ourValues": "Our Values & Commitments",
+            "value1": "Fair pay and treatment for all local collaborators",
+            "value2": "Prioritizing eco-friendly and locally-owned accommodations",
+            "value3": "Supporting conservation and reforestation projects"
+        },
+        "toursAndTripsSection": {
+            "subtitle": "Price Upon Request",
+            "title": "Tours & Trips",
+            "description": "We work in partnership with domestic airlines in Madagascar to help you coordinate flights between key destinations like Antananarivo, Morondava, Diego, Tulear, Sainte Marie, and more.",
+            "toursAndTripsList": {
+                "title1": "Southern & Deep South Circuit",
+                "subtitle1": "From Antsirabe to Tulear and beyond — landscapes, culture, and wildlife.",
+                "title2": "Tsingy de Bemaraha Circuit",
+                "subtitle2": "Adventure to the UNESCO-listed stone forest in western Madagascar.",
+                "title3": "Tsiribihina River Descent",
+                "subtitle3": "Multi-day river trip through wild nature and remote villages.",
+                "title4": "Andasibe & Manambato",
+                "subtitle4": "Rainforest, lakes, and the famous Indri lemur — ideal short escape.",
+                "title5": "Sainte Marie Island",
+                "subtitle5": "Beaches, whales (in season), and island relaxation.",
+                "title6": "Isalo (Ranohira) Circuit",
+                "subtitle6": "Canyons, natural pools, and desert landscapes in Isalo Park.",
+                "title7": "Diego / Majunga Circuit",
+                "subtitle7": "Northern and western Madagascar: coastal views and local charm.",
+                "title8": "Antananarivo City Tour",
+                "subtitle8": "Discover the capital’s history, culture, and key landmarks.",
+                "title9": "Morondava City Tour",
+                "subtitle9": "Explore the famous Avenue of the Baobabs, local villages, and the western coast’s laid-back charm — perfect for sunsets and scenic adventures."
+            },
+            "contactUsButton": "Contact Us"
+        },
+        "carRentalSection": {
+            "experimented": "Experimented",
+            "subtitle": "Explore with Freedom",
+            "title": "Car Rental",
+            "description": "Discover Madagascar your way with our flexible and reliable car rental service. Whether you're heading to the majestic south,  exploring remote national parks, or driving along the stunning coastline, Prestiige Travel Madagascar offers the right vehicle for your journey.",
+            "list1": "4x4s, minibuses, or economy cars available",
+            "list2": "With or without a professional driver",
+            "list3": "Daily rentals or long-term packages",
+            "list4": "Private transfers (airport, city-to-city) available",
+            "description2": "Includes rental terms, pricing, and online booking form.",
+            "bookingButton": "Book Now"
+        },
+        "typesOfTravelSection": {
+            "subtitle": "Available Packages:",
+            "title": "Types of Travel Packages",
+            "travelPackagesList": {
+                "title1": "All-Inclusive",
+                "detail1": "➤ Accommodation, meals, transport & guided tours included",
+                "title2": "Half-Board",
+                "detail2": "➤ Accommodation + breakfast and dinner",
+                "title3": "Group Travel",
+                "detail3": "➤ Shared tours with other travelers",
+                "detail4": "➤ Social, budget-friendly atmosphere",
+                "title4": "Car Rental Travel",
+                "detail5": "➤ Self-drive or driver-assisted tours",
+                "detail6": "➤ 4x4s, minibuses, AC, insurance included",
+                "title5": "Private Transfers",
+                "detail7": "➤ Airport pick-up/drop-off, inter-city, parks",
+                "detail8": "➤ Safe, timely, and comfortable"
+            },
+            "bookingButton": "Book Now"
+        },
+        "gallerySection": {
+            "subtitle": "Discover Madagascar Through Our Lens",
+            "title": "Gallery",
+            "description": "A journey begins with a single image. Explore the stunning landscapes, unique wildlife, vibrant culture, and memorable moments captured during our real tours across southern Madagascar."
+        },
+        "contactUsSection": {
+            "title": "Contact us",
+            "subtitle": "Have a question or need a quote?"
         }
     },
     "footer": {
         "weSpecialize": "We specialize in authentic and naturalist tours in Madagascar. ",
         "links": "Links",
-        "home": "Home",
-        "aboutUs": "About Us",
-        "ToursAndStays": "Tours & Stays",
-        "carRental": "Car Rental",
         "contact": "Contact Us",
         "allRightsReserved": "All rights reserved"
     }

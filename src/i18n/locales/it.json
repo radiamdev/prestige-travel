@@ -3,21 +3,103 @@
         "notFound": "Pagina non trovata",
         "notFoundDescription1": "La pagina che stai cercando non sembra esistere.",
         "notFoundDescription2": "Forse è stata spostata o eliminata.",
-        "goBack": "Torna alla home"
+        "goBack": "Torna alla home",
+        "home": "Home",
+        "aboutUs": "Chi siamo",
+        "ToursAndStays": "Tour e soggiorni",
+        "carRental": "Noleggio auto"
     },
     "homePage": {
+        "welcome": {
+            "welcomeTo": "Benvenuto a",
+            "weSpecialize": "Siamo specializzati in tour autentici e naturalistici in tutte le regioni del Madagascar. Vivi un viaggio immersivo attraverso natura, cultura e avventura.",
+            "booking": "Prenotazione",
+            "explore": "Esplora"
+        },
         "aboutUsSection": {
             "title": "Chi siamo",
-            "subtitle": "Scopri di più sulla nostra agenzia"
+            "subtitle": "Scopri di più sulla nostra agenzia",
+            "description": "Scopri di più su chi siamo e cosa ci spinge. Siamo un team appassionato con sede in Madagascar, impegnato a offrire esperienze di viaggio significative radicate nella natura, nella cultura e nel rispetto.",
+            "ourMission": "Le nostre missioni",
+            "ourMissionDescription": "Miriamo a promuovere un turismo responsabile che rispetti la biodiversità, le comunità locali e il patrimonio culturale. Creiamo esperienze di viaggio immersive che avvantaggiano sia i visitatori che l'ambiente.",
+            "ourTeam": "Incontra il nostro team",
+            "ourTeamDescription": "Siamo un team 100% locale di guide, autisti e coordinatori di viaggio che conoscono il sud del Madagascar come le loro tasche. Il nostro personale parla malgascio, francese, inglese, tedesco e italiano ed è dedicato a rendere il tuo viaggio indimenticabile.",
+            "ourValues": "I nostri valori e impegni",
+            "value1": "Retribuzione e trattamento equi per tutti i collaboratori locali",
+            "value2": "Priorità a strutture ricettive ecologiche e gestite localmente",
+            "value3": "Sostegno a progetti di conservazione e riforestazione"
+        },
+        "toursAndTripsSection": {
+            "subtitle": "Prezzo su richiesta",
+            "title": "Tour e viaggi",
+            "description": "Collaboriamo con compagnie aeree nazionali in Madagascar per aiutarti a coordinare i voli tra destinazioni chiave come Antananarivo, Morondava, Diego, Tulear, Sainte Marie e altre.",
+            "toursAndTripsList": {
+                "title1": "Circuito Sud e Profondo Sud",
+                "subtitle1": "Da Antsirabe a Tulear e oltre — paesaggi, cultura e fauna selvatica.",
+                "title2": "Circuito Tsingy de Bemaraha",
+                "subtitle2": "Avventura nella foresta di pietra classificata UNESCO nel Madagascar occidentale.",
+                "title3": "Discesa del fiume Tsiribihina",
+                "subtitle3": "Viaggio fluviale di più giorni attraverso natura selvaggia e villaggi remoti.",
+                "title4": "Andasibe & Manambato",
+                "subtitle4": "Foresta pluviale, laghi e il famoso lemure Indri — fuga breve ideale.",
+                "title5": "Isola di Sainte Marie",
+                "subtitle5": "Spiagge, balene (in stagione) e relax insulare.",
+                "title6": "Circuito Isalo (Ranohira)",
+                "subtitle6": "Canyon, piscine naturali e paesaggi desertici nel parco di Isalo.",
+                "title7": "Circuito Diego / Majunga",
+                "subtitle7": "Nord e ovest del Madagascar: viste costiere e fascino locale.",
+                "title8": "Tour della città di Antananarivo",
+                "subtitle8": "Scopri la storia, la cultura e i principali monumenti della capitale.",
+                "title9": "Tour della città di Morondava",
+                "subtitle9": "Esplora il famoso Viale dei Baobab, i villaggi locali e il fascino rilassato della costa occidentale — perfetto per tramonti e avventure scenografiche."
+            },
+            "contactUsButton": "Contattaci"
+        },
+        "carRentalSection": {
+            "experimented": "Esperto",
+            "subtitle": "Esplora in libertà",
+            "title": "Noleggio auto",
+            "description": "Scopri il Madagascar a modo tuo con il nostro servizio di noleggio auto flessibile e affidabile. Che tu stia andando verso il maestoso sud, esplorando parchi nazionali remoti o guidando lungo la splendida costa, Prestiige Travel Madagascar offre il veicolo giusto per il tuo viaggio.",
+            "list1": "4x4, minibus o auto economiche disponibili",
+            "list2": "Con o senza autista professionista",
+            "list3": "Noleggi giornalieri o pacchetti a lungo termine",
+            "list4": "Trasferimenti privati (aeroporto, città a città) disponibili",
+            "description2": "Include termini di noleggio, prezzi e modulo di prenotazione online.",
+            "bookingButton": "Prenota ora"
+        },
+        "typesOfTravelSection": {
+            "subtitle": "Pacchetti disponibili:",
+            "title": "Tipi di pacchetti di viaggio",
+            "travelPackagesList": {
+                "title1": "Tutto incluso",
+                "detail1": "➤ Alloggio, pasti, trasporto e tour guidati inclusi",
+                "title2": "Mezza pensione",
+                "detail2": "➤ Alloggio + colazione e cena",
+                "title3": "Viaggio di gruppo",
+                "detail3": "➤ Tour condivisi con altri viaggiatori",
+                "detail4": "➤ Atmosfera sociale ed economica",
+                "title4": "Viaggio con noleggio auto",
+                "detail5": "➤ Tour in autonomia o con autista",
+                "detail6": "➤ 4x4, minibus, aria condizionata, assicurazione inclusa",
+                "title5": "Trasferimenti privati",
+                "detail7": "➤ Prelievo/consegna in aeroporto, collegamenti tra città, parchi",
+                "detail8": "➤ Sicuro, puntuale e confortevole"
+            },
+            "bookingButton": "Prenota ora"
+        },
+        "gallerySection": {
+            "subtitle": "Scopri il Madagascar attraverso il nostro obiettivo",
+            "title": "Galleria",
+            "description": "Un viaggio inizia con una singola immagine. Esplora i paesaggi mozzafiato, la fauna unica, la cultura vibrante e i momenti memorabili catturati durante i nostri veri tour nel sud del Madagascar."
+        },
+        "contactUsSection": {
+            "title": "Contattaci",
+            "subtitle": "Hai una domanda o hai bisogno di un preventivo?"
         }
     },
     "footer": {
         "weSpecialize": "Siamo specializzati in tour autentici e naturalistici in Madagascar.",
         "links": "Link",
-        "home": "Home",
-        "aboutUs": "Chi siamo",
-        "ToursAndStays": "Tour e soggiorni",
-        "carRental": "Noleggio auto",
         "contact": "Contattaci",
         "allRightsReserved": "Tutti i diritti riservati"
     }
