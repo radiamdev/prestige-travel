@@ -54,6 +54,18 @@
                 "subtitle9": "Explorez la célèbre Avenue des Baobabs, les villages locaux et le charme décontracté de la côte ouest — parfait pour les couchers de soleil et les aventures pittoresques."
             },
             "contactUsButton": "Contactez-nous"
+        },
+        "carRentalSection": {
+            "experimented": "Expérimenté",
+            "subtitle": "Explorez en toute liberté",
+            "title": "Location de voitures",
+            "description": "Découvrez Madagascar à votre rythme avec notre service de location de voitures flexible et fiable. Que vous vous dirigiez vers le majestueux sud, exploriez des parcs nationaux reculés ou rouliez le long de la magnifique côte, Prestiige Travel Madagascar propose le véhicule adapté à votre voyage.",
+            "list1": "4x4, minibus ou voitures économiques disponibles",
+            "list2": "Avec ou sans chauffeur professionnel",
+            "list3": "Locations à la journée ou forfaits à long terme",
+            "list4": "Transferts privés (aéroport, ville à ville) disponibles",
+            "description2": "Inclut les conditions de location, les tarifs et le formulaire de réservation en ligne.",
+            "bookingButton": "Réserver maintenant"
         }
     },
     "footer": {

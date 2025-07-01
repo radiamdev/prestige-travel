@@ -54,6 +54,18 @@
                 "subtitle9": "Erkunden Sie die berühmte Allee der Baobabs, lokale Dörfer und den entspannten Charme der Westküste — perfekt für Sonnenuntergänge und malerische Abenteuer."
             },
             "contactUsButton": "Kontaktieren Sie uns"
+        },
+        "carRentalSection": {
+            "experimented": "Erfahren",
+            "subtitle": "Entdecken Sie mit Freiheit",
+            "title": "Autovermietung",
+            "description": "Entdecken Sie Madagaskar auf Ihre Weise mit unserem flexiblen und zuverlässigen Autovermietungsservice. Egal, ob Sie in den majestätischen Süden fahren, abgelegene Nationalparks erkunden oder entlang der atemberaubenden Küste reisen, Prestiige Travel Madagascar bietet das richtige Fahrzeug für Ihre Reise.",
+            "list1": "4x4s, Minibusse oder Economy-Fahrzeuge verfügbar",
+            "list2": "Mit oder ohne professionellen Fahrer",
+            "list3": "Tägliche Mieten oder Langzeitpakete",
+            "list4": "Private Transfers (Flughafen, Stadt-zu-Stadt) verfügbar",
+            "description2": "Enthält Mietbedingungen, Preise und Online-Buchungsformular.",
+            "bookingButton": "Jetzt buchen"
         }
     },
     "footer": {

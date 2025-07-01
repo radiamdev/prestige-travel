@@ -54,6 +54,18 @@
                 "subtitle9": "Explore the famous Avenue of the Baobabs, local villages, and the western coast’s laid-back charm — perfect for sunsets and scenic adventures."
             },
             "contactUsButton": "Contact Us"
+        },
+        "carRentalSection": {
+            "experimented": "Experimented",
+            "subtitle": "Explore with Freedom",
+            "title": "Car Rental",
+            "description": "Discover Madagascar your way with our flexible and reliable car rental service. Whether you're heading to the majestic south,  exploring remote national parks, or driving along the stunning coastline, Prestiige Travel Madagascar offers the right vehicle for your journey.",
+            "list1": "4x4s, minibuses, or economy cars available",
+            "list2": "With or without a professional driver",
+            "list3": "Daily rentals or long-term packages",
+            "list4": "Private transfers (airport, city-to-city) available",
+            "description2": "Includes rental terms, pricing, and online booking form.",
+            "bookingButton": "Book Now"
         }
     },
     "footer": {

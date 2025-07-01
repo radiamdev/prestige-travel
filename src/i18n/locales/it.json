@@ -54,6 +54,18 @@
                 "subtitle9": "Esplora il famoso Viale dei Baobab, i villaggi locali e il fascino rilassato della costa occidentale — perfetto per tramonti e avventure scenografiche."
             },
             "contactUsButton": "Contattaci"
+        },
+        "carRentalSection": {
+            "experimented": "Esperto",
+            "subtitle": "Esplora in libertà",
+            "title": "Noleggio auto",
+            "description": "Scopri il Madagascar a modo tuo con il nostro servizio di noleggio auto flessibile e affidabile. Che tu stia andando verso il maestoso sud, esplorando parchi nazionali remoti o guidando lungo la splendida costa, Prestiige Travel Madagascar offre il veicolo giusto per il tuo viaggio.",
+            "list1": "4x4, minibus o auto economiche disponibili",
+            "list2": "Con o senza autista professionista",
+            "list3": "Noleggi giornalieri o pacchetti a lungo termine",
+            "list4": "Trasferimenti privati (aeroporto, città a città) disponibili",
+            "description2": "Include termini di noleggio, prezzi e modulo di prenotazione online.",
+            "bookingButton": "Prenota ora"
         }
     },
     "footer": {
