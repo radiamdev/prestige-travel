@@ -91,6 +91,10 @@
             "subtitle": "Discover Madagascar Through Our Lens",
             "title": "Gallery",
             "description": "A journey begins with a single image. Explore the stunning landscapes, unique wildlife, vibrant culture, and memorable moments captured during our real tours across southern Madagascar."
+        },
+        "contactUsSection": {
+            "title": "Contact us",
+            "subtitle": "Have a question or need a quote?"
         }
     },
     "footer": {

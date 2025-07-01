@@ -91,6 +91,10 @@
             "subtitle": "Entdecken Sie Madagaskar durch unsere Linse",
             "title": "Galerie",
             "description": "Eine Reise beginnt mit einem einzigen Bild. Erkunden Sie die atemberaubenden Landschaften, die einzigartige Tierwelt, die lebendige Kultur und die unvergesslichen Momente, die während unserer echten Touren im Süden Madagaskars festgehalten wurden."
+        },
+        "contactUsSection": {
+            "title": "Kontaktieren Sie uns",
+            "subtitle": "Haben Sie eine Frage oder benötigen Sie ein Angebot?"
         }
     },
     "footer": {

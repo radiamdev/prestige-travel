@@ -91,6 +91,10 @@
             "subtitle": "Découvrez Madagascar à travers notre objectif",
             "title": "Galerie",
             "description": "Un voyage commence par une seule image. Explorez les paysages époustouflants, la faune unique, la culture vibrante et les moments mémorables capturés lors de nos véritables circuits dans le sud de Madagascar."
+        },
+        "contactUsSection": {
+            "title": "Contactez-nous",
+            "subtitle": "Vous avez une question ou besoin d'un devis ?"
         }
     },
     "footer": {

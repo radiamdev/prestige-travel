@@ -3,6 +3,12 @@ import { Image } from 'astro:assets'
 import backgroundImage from '../../../assets/images/home/contact_bg.webp'
 import makiContact from '../../../assets/images/home/maki_contact.webp'
 import ContactUsForm from '../../forms/ContactUsForm.astro'
+
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
 ---
 
 <section
@@ -38,10 +44,10 @@ import ContactUsForm from '../../forms/ContactUsForm.astro'
                 <div class="space-y-8">
                     <div class="space-y-4">
                         <p class="text-gray-600 text-sm font-medium">
-                            Have a question or need a quote?
+                            {t('homePage.contactUsSection.subtitle')}
                         </p>
                         <h2 class="text-primary text-4xl lg:text-5xl font-bold">
-                            Contact us
+                            {t('homePage.contactUsSection.title')}
                         </h2>
                     </div>
 

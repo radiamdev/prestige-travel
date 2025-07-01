@@ -91,6 +91,10 @@
             "subtitle": "Scopri il Madagascar attraverso il nostro obiettivo",
             "title": "Galleria",
             "description": "Un viaggio inizia con una singola immagine. Esplora i paesaggi mozzafiato, la fauna unica, la cultura vibrante e i momenti memorabili catturati durante i nostri veri tour nel sud del Madagascar."
+        },
+        "contactUsSection": {
+            "title": "Contattaci",
+            "subtitle": "Hai una domanda o hai bisogno di un preventivo?"
         }
     },
     "footer": {
