@@ -113,6 +113,21 @@
             "item4": "Supporto completo dalla nostra agenzia locale durante il tuo viaggio",
             "description": "Il carburante non è incluso e verrà quotato separatamente in base al tuo itinerario pianificato.",
             "bookingButton": "Prenota ora"
+        },
+        "availableVehiclesSection": {
+            "subtitle": "Scopri di più sulla nostra agenzia",
+            "title": "Veicoli disponibili",
+            "description": "A partire da 60 €/giorno – inclusi veicolo, autista-guida professionale e carburante. Ideale per tour, trasferimenti a lunga distanza o viaggi d'affari."
+        },
+        "paymentTermsSection": {
+            "subtitle": "Pagamento facile",
+            "title": "Termini di pagamento",
+            "item1": "Acconto del 20% tramite bonifico bancario o Western Union (noleggio veicolo e tour)",
+            "item2": "Un contratto di servizio verrà inviato dopo la prenotazione",
+            "item3": "75% del totale pagato in contanti all'arrivo ad Antananarivo",
+            "item4": "5% pagato alla fine del tour",
+            "subtitle2": "Valute accettate: Ariary, Euro, USD",
+            "experimented": "Esperto"
         }
     },
     "footer": {

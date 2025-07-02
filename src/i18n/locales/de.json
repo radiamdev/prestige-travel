@@ -113,6 +113,21 @@
             "item4": "Volle Unterstützung durch unsere lokale Agentur während Ihrer Reise",
             "description": "Kraftstoff ist nicht inbegriffen und wird separat basierend auf Ihrem geplanten Reiseplan berechnet.",
             "bookingButton": "Jetzt buchen"
+        },
+        "availableVehiclesSection": {
+            "subtitle": "Erfahren Sie mehr über unsere Agentur",
+            "title": "Verfügbare Fahrzeuge",
+            "description": "Ab 60 €/Tag – inklusive Fahrzeug, professionellem Fahrer-Guide und Kraftstoff. Ideal für Touren, Langstreckentransfers oder Geschäftsreisen."
+        },
+        "paymentTermsSection": {
+            "subtitle": "Einfache Zahlung",
+            "title": "Zahlungsbedingungen",
+            "item1": "20 % Anzahlung per Banküberweisung oder Western Union (Fahrzeugvermietung & Touren)",
+            "item2": "Ein Dienstleistungsvertrag wird nach der Reservierung gesendet",
+            "item3": "75 % des Gesamtbetrags in bar bei Ankunft in Antananarivo",
+            "item4": "5 % am Ende der Tour gezahlt",
+            "subtitle2": "Akzeptierte Währungen: Ariary, Euro, USD",
+            "experimented": "Erfahren"
         }
     },
     "footer": {

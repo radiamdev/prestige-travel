@@ -1,6 +1,12 @@
 ---
 import { Image } from 'astro:assets'
 import starex from '../../../assets/images/car_rental/starex_white.webp'
+
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
 ---
 
 <section class="bg-primary lg:pl-24 lg:pr-0 px-6 lg:py-16 py-12">

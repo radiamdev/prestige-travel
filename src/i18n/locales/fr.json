@@ -113,6 +113,21 @@
             "item4": "Support complet de notre agence locale pendant votre voyage",
             "description": "Le carburant n'est pas inclus et sera facturé séparément en fonction de votre itinéraire prévu.",
             "bookingButton": "Réserver maintenant"
+        },
+        "availableVehiclesSection": {
+            "subtitle": "En savoir plus sur notre agence",
+            "title": "Véhicules disponibles",
+            "description": "À partir de 60 €/jour – incluant le véhicule, un chauffeur-guide professionnel et le carburant. Idéal pour les circuits, les transferts longue distance ou les voyages d'affaires."
+        },
+        "paymentTermsSection": {
+            "subtitle": "Paiement facile",
+            "title": "Conditions de paiement",
+            "item1": "Acompte de 20 % par virement bancaire ou Western Union (location de véhicule et circuits)",
+            "item2": "Un contrat de service sera envoyé après la réservation",
+            "item3": "75 % du total payé en espèces à l'arrivée à Antananarivo",
+            "item4": "5 % payé à la fin du circuit",
+            "subtitle2": "Devises acceptées : Ariary, Euro, USD",
+            "experimented": "Expérimenté"
         }
     },
     "footer": {

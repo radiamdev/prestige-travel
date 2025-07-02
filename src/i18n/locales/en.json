@@ -113,6 +113,21 @@
             "item4": "Full support from our local agency during your trip",
             "description": " Fuel is not included and will be quoted separately based on your planned itinerary.",
             "bookingButton": "Book Now"
+        },
+        "availableVehiclesSection": {
+            "subtitle": "Learn more about our agency",
+            "title": "Available Vehicles",
+            "description": "From €60/day – including vehicle, professional driver-guide, and fuel. Ideal for tours, long-distance transfers, or business trips."
+        },
+        "paymentTermsSection": {
+            "subtitle": "Easy pay",
+            "title": "Payment Terms",
+            "item1": "20% deposit via bank transfer or Western Union (vehicle rental & tours)",
+            "item2": "A service contract will be sent after reservation",
+            "item3": "75% of the total paid in cash upon arrival in Antananarivo",
+            "item4": "5% paid at the end of the tour",
+            "subtitle2": "Accepted currencies: Ariary, Euro, USD",
+            "experimented": "Experimented"
         }
     },
     "footer": {
