@@ -8,6 +8,13 @@ import logo from '../../../assets/logo.webp'
 import Header from '../../layout/Header.astro'
 import MobileMenuPanel from '../../layout/MobileMenuPanel.astro'
 import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
+import LanguagePicker from '../../common/LanguagePicker.astro'
+
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
 ---
 
 <div class="relative w-full h-screen overflow-hidden bg-white">
@@ -51,17 +58,16 @@ import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
 
         <!-- Contenu principal -->
         <div class="max-w-md mx-auto space-y-8 lg:-mt-32 -mt-72">
-            <h1 class="text-5xl text-center">Car Rental</h1>
+            <h1 class="text-5xl text-center">
+                {t('carRentalPage.welcome.title')}
+            </h1>
             <p class="text-justify">
-                Discover Madagascar at your own pace with our reliable car
-                rental service. Whether you’re heading deep into national parks
-                or exploring coastal towns, we offer comfortable,
-                air-conditioned vehicles with experienced local driver-guides.
+                {t('carRentalPage.welcome.description')}
             </p>
             <!-- Explore button -->
-            <div class="flex lg:justify-end justify-center">
+            <div class="flex lg:justify-start justify-center">
                 <BookingButton
-                    label="Explore"
+                    label={t('carRentalPage.welcome.exploreButton')}
                     icon={searchIcon.src}
                     iconAlt="Reservation icon"
                     href="/#tours"
@@ -69,10 +75,15 @@ import BurgerMenuButton from '../../common/BurgerMenuButton.astro'
             </div>
         </div>
 
+        <!-- Language picker -->
+        <div class="hidden lg:block absolute top-12 right-24">
+            <LanguagePicker />
+        </div>
+
         <!-- Booking button -->
-        <div class="absolute top-10 right-24 hidden lg:block">
+        <div class="absolute bottom-10 right-24 hidden lg:block">
             <BookingButton
-                label="Booking"
+                label={t('carRentalPage.welcome.reservationButton')}
                 icon={reservationIcon.src}
                 iconAlt="Reservation icon"
                 href="#booknow"

@@ -97,6 +97,24 @@
             "subtitle": "Have a question or need a quote?"
         }
     },
+    "carRentalPage": {
+        "welcome": {
+            "title": "Car Rental",
+            "description": "Discover Madagascar at your own pace with our reliable car rental service. Whether you’re heading deep into national parks or exploring coastal towns, we offer comfortable, air-conditioned vehicles with experienced local driver-guides.",
+            "exploreButton": "Explore",
+            "reservationButton": "Book Now"
+        },
+        "whatsIncludedSection": {
+            "subtitle": "Explore with Freedom",
+            "title": "What's Included",
+            "item1": "Private use of vehicle",
+            "item2": "Experienced Malagasy driver-guide (English or French speaking)",
+            "item3": "Air-conditioned, road-ready 4x4 or minibus",
+            "item4": "Full support from our local agency during your trip",
+            "description": " Fuel is not included and will be quoted separately based on your planned itinerary.",
+            "bookingButton": "Book Now"
+        }
+    },
     "footer": {
         "weSpecialize": "We specialize in authentic and naturalist tours in Madagascar. ",
         "links": "Links",

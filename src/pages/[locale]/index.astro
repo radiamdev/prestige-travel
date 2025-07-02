@@ -11,10 +11,6 @@ import ContactUsSection from '../../components/sections/homepage/ContactUsSectio
 import Footer from '../../components/layout/Footer.astro'
 import { getLangFromUrl, useTranslations } from '../../i18n'
 
-const pageTitle = 'Welcome to Prestige Travel Madagascar'
-const pageDescription =
-    'Authentic and naturalist tours in the southern region of Madagascar with Prestige Travel.'
-
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
@@ -26,6 +22,10 @@ export async function getStaticPaths() {
         { params: { locale: 'it' } },
     ]
 }
+
+const pageTitle = 'Prestige Travel Madagascar'
+const pageDescription =
+    'Authentic and naturalist tours in the southern region of Madagascar with Prestige Travel.'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.

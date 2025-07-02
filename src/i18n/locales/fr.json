@@ -97,6 +97,24 @@
             "subtitle": "Vous avez une question ou besoin d'un devis ?"
         }
     },
+    "carRentalPage": {
+        "welcome": {
+            "title": "Location de voitures",
+            "description": "Découvrez Madagascar à votre rythme avec notre service de location de voitures fiable. Que vous vous aventuriez dans les parcs nationaux ou exploriez les villes côtières, nous proposons des véhicules confortables et climatisés avec des chauffeurs-guides locaux expérimentés.",
+            "exploreButton": "Explorer",
+            "reservationButton": "Réserver maintenant"
+        },
+        "whatsIncludedSection": {
+            "subtitle": "Explorez en toute liberté",
+            "title": "Ce qui est inclus",
+            "item1": "Utilisation privée du véhicule",
+            "item2": "Chauffeur-guide malgache expérimenté (parlant anglais ou français)",
+            "item3": "4x4 ou minibus climatisé, prêt pour la route",
+            "item4": "Support complet de notre agence locale pendant votre voyage",
+            "description": "Le carburant n'est pas inclus et sera facturé séparément en fonction de votre itinéraire prévu.",
+            "bookingButton": "Réserver maintenant"
+        }
+    },
     "footer": {
         "weSpecialize": "Nous sommes spécialisés dans les circuits authentiques et naturalistes à Madagascar.",
         "links": "Liens",

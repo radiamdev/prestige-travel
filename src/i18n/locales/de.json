@@ -97,6 +97,24 @@
             "subtitle": "Haben Sie eine Frage oder benötigen Sie ein Angebot?"
         }
     },
+    "carRentalPage": {
+        "welcome": {
+            "title": "Autovermietung",
+            "description": "Entdecken Sie Madagaskar in Ihrem eigenen Tempo mit unserem zuverlässigen Autovermietungsservice. Egal, ob Sie tief in Nationalparks reisen oder Küstenstädte erkunden, wir bieten komfortable, klimatisierte Fahrzeuge mit erfahrenen lokalen Fahrer-Guides.",
+            "exploreButton": "Entdecken",
+            "reservationButton": "Jetzt buchen"
+        },
+        "whatsIncludedSection": {
+            "subtitle": "Entdecken Sie mit Freiheit",
+            "title": "Was ist enthalten",
+            "item1": "Private Nutzung des Fahrzeugs",
+            "item2": "Erfahrener malagasischer Fahrer-Guide (Englisch oder Französisch sprechend)",
+            "item3": "Klimatisierter, fahrbereiter 4x4 oder Minibus",
+            "item4": "Volle Unterstützung durch unsere lokale Agentur während Ihrer Reise",
+            "description": "Kraftstoff ist nicht inbegriffen und wird separat basierend auf Ihrem geplanten Reiseplan berechnet.",
+            "bookingButton": "Jetzt buchen"
+        }
+    },
     "footer": {
         "weSpecialize": "Wir sind spezialisiert auf authentische und naturalistische Touren in Madagaskar.",
         "links": "Links",

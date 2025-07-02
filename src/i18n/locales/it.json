@@ -97,6 +97,24 @@
             "subtitle": "Hai una domanda o hai bisogno di un preventivo?"
         }
     },
+    "carRentalPage": {
+        "welcome": {
+            "title": "Noleggio auto",
+            "description": "Scopri il Madagascar al tuo ritmo con il nostro affidabile servizio di noleggio auto. Che tu stia esplorando i parchi nazionali o le città costiere, offriamo veicoli confortevoli e climatizzati con autisti-guide locali esperti.",
+            "exploreButton": "Esplora",
+            "reservationButton": "Prenota ora"
+        },
+        "whatsIncludedSection": {
+            "subtitle": "Esplora in libertà",
+            "title": "Cosa è incluso",
+            "item1": "Uso privato del veicolo",
+            "item2": "Autista-guida malgascio esperto (parlante inglese o francese)",
+            "item3": "4x4 o minibus climatizzato, pronto per la strada",
+            "item4": "Supporto completo dalla nostra agenzia locale durante il tuo viaggio",
+            "description": "Il carburante non è incluso e verrà quotato separatamente in base al tuo itinerario pianificato.",
+            "bookingButton": "Prenota ora"
+        }
+    },
     "footer": {
         "weSpecialize": "Siamo specializzati in tour autentici e naturalistici in Madagascar.",
         "links": "Link",
