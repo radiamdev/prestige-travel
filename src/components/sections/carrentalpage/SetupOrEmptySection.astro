@@ -12,16 +12,15 @@ const { t } = Astro.props as Props
 <section class="bg-primary lg:pl-24 lg:pr-0 px-6 lg:py-16 py-12">
     <div class="space-y-4 pb-8 max-w-2xl mx-auto">
         <p class="text-white font-bold text-center opacity-90">
-            Easy pay
+            {t('carRentalPage.setupOrEmptySection.subtitle')}
         </p>
         <h1
-            class="text-pink-secondary text-5xl font-bold leading-tight text-center drop-shadow-2xl"
+            class="text-pink-secondary text-5xl font-bold leading-tight text-center drop-shadow-2xl whitespace-pre-line"
         >
-            Setup or Empty <br /> Return Days
+            {t('carRentalPage.setupOrEmptySection.title')}
         </h1>
         <p class="text-white text-center">
-            Some routes may require extra days for vehicle positioning or
-            return. These are added to the quote:
+            {t('carRentalPage.setupOrEmptySection.description')}
         </p>
     </div>
 
@@ -31,8 +30,12 @@ const { t } = Astro.props as Props
             <div
                 class="flex justify-between text-white font-semibold pb-4 border-b border-white/50 text-xl"
             >
-                <span>Route</span>
-                <span>Additional Days</span>
+                <span>{t('carRentalPage.setupOrEmptySection.route')}</span>
+                <span
+                    >{
+                        t('carRentalPage.setupOrEmptySection.additionalDays')
+                    }</span
+                >
             </div>
 
             <!-- Rows -->
@@ -41,35 +44,35 @@ const { t } = Astro.props as Props
                     class="flex justify-between items-center border-b border-white/30 pb-2"
                 >
                     <span>Antananarivo - Tamatave</span>
-                    <span>1 Day</span>
+                    <span>1 {t('carRentalPage.setupOrEmptySection.day')}</span>
                 </div>
 
                 <div
                     class="flex justify-between items-center border-b border-white/30 pb-2"
                 >
                     <span>Antananarivo - Morondava</span>
-                    <span>2 Day</span>
+                    <span>2 {t('carRentalPage.setupOrEmptySection.days')}</span>
                 </div>
 
                 <div
                     class="flex justify-between items-center border-b border-white/30 pb-2"
                 >
                     <span>Antananarivo - Tulear</span>
-                    <span>2 Day</span>
+                    <span>2 {t('carRentalPage.setupOrEmptySection.days')}</span>
                 </div>
 
                 <div
                     class="flex justify-between items-center border-b border-white/30 pb-2"
                 >
                     <span>Antananarivo - Diego</span>
-                    <span>3 Day</span>
+                    <span>3 {t('carRentalPage.setupOrEmptySection.days')}</span>
                 </div>
 
                 <div
                     class="flex justify-between items-center border-b border-white/30 pb-2"
                 >
                     <span>Antananarivo - Fort-Dauphin</span>
-                    <span>3 Day</span>
+                    <span>3 {t('carRentalPage.setupOrEmptySection.days')}</span>
                 </div>
             </div>
         </div>

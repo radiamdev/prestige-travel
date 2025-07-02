@@ -128,6 +128,15 @@
             "item4": "5 % payé à la fin du circuit",
             "subtitle2": "Devises acceptées : Ariary, Euro, USD",
             "experimented": "Expérimenté"
+        },
+        "setupOrEmptySection": {
+            "subtitle": "Paiement facile",
+            "title": "Jours de mise en place ou \nDe retour à vide",
+            "description": "Certains itinéraires peuvent nécessiter des jours supplémentaires pour le positionnement ou le retour du véhicule. Ceux-ci sont ajoutés au devis :",
+            "route": "Itinéraire",
+            "additionalDays": "Jours supplémentaires",
+            "day": "jour",
+            "days": "jours"
         }
     },
     "footer": {

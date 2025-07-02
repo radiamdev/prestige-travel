@@ -128,6 +128,15 @@
             "item4": "5% pagato alla fine del tour",
             "subtitle2": "Valute accettate: Ariary, Euro, USD",
             "experimented": "Esperto"
+        },
+        "setupOrEmptySection": {
+            "subtitle": "Pagamento facile",
+            "title": "Giorni di preparazione o \nRitorno a vuoto",
+            "description": "Alcuni itinerari possono richiedere giorni aggiuntivi per il posizionamento o il ritorno del veicolo. Questi vengono aggiunti al preventivo:",
+            "route": "Itinerario",
+            "additionalDays": "Giorni aggiuntivi",
+            "day": "giorno",
+            "days": "giorni"
         }
     },
     "footer": {

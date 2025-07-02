@@ -128,6 +128,15 @@
             "item4": "5 % am Ende der Tour gezahlt",
             "subtitle2": "Akzeptierte Währungen: Ariary, Euro, USD",
             "experimented": "Erfahren"
+        },
+        "setupOrEmptySection": {
+            "subtitle": "Einfache Zahlung",
+            "title": "Vorbereitungs- oder \nLeerrückfahrtage",
+            "description": "Einige Routen erfordern möglicherweise zusätzliche Tage für die Fahrzeugpositionierung oder Rückfahrt. Diese werden dem Angebot hinzugefügt:",
+            "route": "Route",
+            "additionalDays": "Zusätzliche Tage",
+            "day": "Tag",
+            "days": "Tage"
         }
     },
     "footer": {
