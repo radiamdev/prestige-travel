@@ -137,6 +137,12 @@
             "additionalDays": "Additional days",
             "day": "day",
             "days": "days"
+        },
+        "bookNowSection": {
+            "seats": "seats",
+            "airConditioned": "air-conditioned",
+            "subtitle": "Secure your trip with a quick reservation.",
+            "title": "Book Now"
         }
     },
     "footer": {

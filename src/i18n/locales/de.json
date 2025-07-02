@@ -137,6 +137,12 @@
             "additionalDays": "Zusätzliche Tage",
             "day": "Tag",
             "days": "Tage"
+        },
+        "bookNowSection": {
+            "seats": "Sitze",
+            "airConditioned": "klimatisiert",
+            "subtitle": "Sichern Sie Ihre Reise mit einer schnellen Reservierung.",
+            "title": "Jetzt buchen"
         }
     },
     "footer": {
