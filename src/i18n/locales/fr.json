@@ -94,7 +94,82 @@
         },
         "contactUsSection": {
             "title": "Contactez-nous",
-            "subtitle": "Vous avez une question ou besoin d'un devis ?"
+            "subtitle": "Vous avez une question ou besoin d'un devis ?",
+            "contact": {
+                "email": "Email",
+                "fullName": "Nom complet",
+                "subject": "Objet",
+                "subjectPlaceholder": "Demande d'informations",
+                "message": "Message",
+                "messagePlaceholder": "Votre message...",
+                "send": "Envoyer",
+                "sending": "Envoi en cours...",
+                "success": "✅ Message envoyé avec succès !",
+                "error": "❌ Échec de l'envoi du message."
+            }
+        }
+    },
+    "carRentalPage": {
+        "welcome": {
+            "title": "Location de voitures",
+            "description": "Découvrez Madagascar à votre rythme avec notre service de location de voitures fiable. Que vous vous aventuriez dans les parcs nationaux ou exploriez les villes côtières, nous proposons des véhicules confortables et climatisés avec des chauffeurs-guides locaux expérimentés.",
+            "exploreButton": "Explorer",
+            "reservationButton": "Réserver maintenant"
+        },
+        "whatsIncludedSection": {
+            "subtitle": "Explorez en toute liberté",
+            "title": "Ce qui est inclus",
+            "item1": "Utilisation privée du véhicule",
+            "item2": "Chauffeur-guide malgache expérimenté (parlant anglais ou français)",
+            "item3": "4x4 ou minibus climatisé, prêt pour la route",
+            "item4": "Support complet de notre agence locale pendant votre voyage",
+            "description": "Le carburant n'est pas inclus et sera facturé séparément en fonction de votre itinéraire prévu.",
+            "bookingButton": "Réserver maintenant"
+        },
+        "availableVehiclesSection": {
+            "subtitle": "En savoir plus sur notre agence",
+            "title": "Véhicules disponibles",
+            "description": "À partir de 60 €/jour – incluant le véhicule, un chauffeur-guide professionnel et le carburant. Idéal pour les circuits, les transferts longue distance ou les voyages d'affaires."
+        },
+        "paymentTermsSection": {
+            "subtitle": "Paiement facile",
+            "title": "Conditions de paiement",
+            "item1": "Acompte de 20 % par virement bancaire ou Western Union (location de véhicule et circuits)",
+            "item2": "Un contrat de service sera envoyé après la réservation",
+            "item3": "75 % du total payé en espèces à l'arrivée à Antananarivo",
+            "item4": "5 % payé à la fin du circuit",
+            "subtitle2": "Devises acceptées : Ariary, Euro, USD",
+            "experimented": "Expérimenté"
+        },
+        "setupOrEmptySection": {
+            "subtitle": "Paiement facile",
+            "title": "Jours de mise en place ou \nDe retour à vide",
+            "description": "Certains itinéraires peuvent nécessiter des jours supplémentaires pour le positionnement ou le retour du véhicule. Ceux-ci sont ajoutés au devis :",
+            "route": "Itinéraire",
+            "additionalDays": "Jours supplémentaires",
+            "day": "jour",
+            "days": "jours"
+        },
+        "bookNowSection": {
+            "seats": "sièges",
+            "airConditioned": "climatisé",
+            "subtitle": "Réservez votre voyage rapidement.",
+            "title": "Réserver maintenant",
+            "bookingForm": {
+                "fullName": "Nom complet",
+                "email": "Adresse email",
+                "desiredVehicle": "Véhicule souhaité",
+                "vehicleRequired": "Le choix du véhicule est obligatoire",
+                "pickup": "Lieu et date de départ",
+                "dropoff": "Lieu et date d'arrivée",
+                "passengers": "Nombre de passagers",
+                "message": "Message",
+                "messagePlaceholder": "Votre note ou message...",
+                "send": "Envoyer la demande",
+                "sending": "Envoi en cours...",
+                "success": "✅ Demande envoyée avec succès !",
+                "error": "❌ Échec de l'envoi de la demande."
+            }
         }
     },
     "footer": {

@@ -2,19 +2,16 @@
 import { Image } from 'astro:assets'
 import backgroundImage from '../../../assets/images/home/contact_bg.webp'
 import makiContact from '../../../assets/images/car_rental/maki_contact2.webp'
-import envoyerIcon from '../../../assets/icons/envoyer.svg'
-import BookingButton from '../../common/BookingButton.astro'
-import InputField from '../../common/InputField.astro'
-import SelectField from '../../common/SelectField.astro'
-import TextareaField from '../../common/TextareaField.astro'
+import BookingForm from '../../forms/BookingForm'
 
-const vehicles = [
-    'Hyundai Grand Starex CVX 10 places climatisé ',
-    'Hyundai Starex 4x4 7 places climatisé ',
-    'Hyundai Terracan 5 places climatisé ',
-    'Ssangyang Rexton 5 places climatisé ',
-    'Toyota Prado 120 5 places climatisé',
-]
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
+import { getLangFromUrl } from '../../../i18n'
+
+const lang = getLangFromUrl(Astro.url)
 ---
 
 <section
@@ -50,62 +47,16 @@ const vehicles = [
                 <div class="space-y-8">
                     <div class="space-y-4">
                         <p class="text-gray-600 text-sm font-medium">
-                            Secure your trip with a quick reservation.
+                            {t('carRentalPage.bookNowSection.subtitle')}
                         </p>
                         <h2 class="text-primary text-4xl lg:text-5xl font-bold">
-                            Book Now
+                            {t('carRentalPage.bookNowSection.title')}
                         </h2>
                     </div>
 
-                    <form
-                        class="space-y-4 max-w-xl mx-auto"
-                        aria-label="Contact form"
-                    >
-                        <InputField
-                            id="fullname"
-                            label="Full name"
-                            placeholder="John Doe"
-                            required
-                        />
-                        <InputField
-                            id="email"
-                            label="Email"
-                            type="email"
-                            placeholder="john@example.com"
-                            required
-                        />
-                        <SelectField
-                            id="vehicle"
-                            label="Desired vehicle"
-                            options={vehicles}
-                            required
-                        />
-                        <InputField
-                            id="pickup"
-                            label="Pickup location and date"
-                            placeholder="Antananarivo - 2025-06-15"
-                        />
-                        <InputField
-                            id="dropoff"
-                            label="Drop-off location and date"
-                            placeholder="Nosy Be - 2025-06-20"
-                        />
-                        <InputField
-                            id="passengers"
-                            label="Number of passengers"
-                            type="number"
-                            min="1"
-                            placeholder="e.g. 5"
-                        />
-                        <TextareaField />
-                        <div class="pt-4">
-                            <BookingButton
-                                label="Send Request"
-                                icon={envoyerIcon.src}
-                                iconAlt="Send icon"
-                            />
-                        </div>
-                    </form>
+                    <!-- Booking Form -->
+                    <BookingForm lang={lang} client:only />
+
                 </div>
 
                 <!-- Image du maki -->

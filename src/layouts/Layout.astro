@@ -1,5 +1,6 @@
 ---
-import ScrollToTopButton from "../components/common/ScrollToTopButton.astro"
+import ScrollToTopButton from '../components/common/ScrollToTopButton.astro'
+import ToastProvider from '../components/common/ToastProvider'
 
 // Props attendues pour les métadonnées
 const {
@@ -21,6 +22,7 @@ const {
 
     <body>
         <slot />
+        <ToastProvider client:only="react" />
         <ScrollToTopButton />
     </body>
 

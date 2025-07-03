@@ -2,6 +2,12 @@
 import { Image } from 'astro:assets'
 import toyota from '../../../assets/images/car_rental/toyota.webp'
 import Icon from '../../../assets/icons/fleche-droite.svg'
+
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
 ---
 
 <section
@@ -9,9 +15,11 @@ import Icon from '../../../assets/icons/fleche-droite.svg'
     class="bg-white lg:px-24 px-6 lg:py-16 py-12 flex lg:flex-row flex-col-reverse items-center gap-16"
 >
     <div class="lg:w-1/2 w-full space-y-8">
-        <p class="text-black font-bold lg:text-start text-center">Easy pay</p>
+        <p class="text-black font-bold lg:text-start text-center">
+            {t('carRentalPage.paymentTermsSection.subtitle')}
+        </p>
         <h1 class="text-primary text-5xl font-bold lg:text-start text-center">
-            Payment Terms
+            {t('carRentalPage.paymentTermsSection.title')}
         </h1>
 
         <div>
@@ -19,32 +27,32 @@ import Icon from '../../../assets/icons/fleche-droite.svg'
                 <li class="flex items-center gap-4">
                     <Icon />
                     <span class="text-gray-500"
-                        >20% deposit via bank transfer or Western Union (vehicle
-                        rental & tours)</span
+                        >{t('carRentalPage.paymentTermsSection.item1')}</span
                     >
                 </li>
                 <li class="flex items-center gap-4">
                     <Icon />
                     <span class="text-gray-500"
-                        >A service contract will be sent after reservation</span
+                        >{t('carRentalPage.paymentTermsSection.item2')}</span
                     >
                 </li>
                 <li class="flex items-center gap-4">
                     <Icon />
                     <span class="text-gray-500"
-                        >75% of the total paid in cash upon arrival in
-                        Antananarivo</span
+                        >{t('carRentalPage.paymentTermsSection.item3')}</span
                     >
                 </li>
                 <li class="flex items-center gap-4">
                     <Icon />
                     <span class="text-gray-500"
-                        >5% paid at the end of the tour</span
+                        >{t('carRentalPage.paymentTermsSection.item4')}</span
                     >
                 </li>
             </ul>
         </div>
-        <p class="text-black font-bold lg:text-start text-center">Accepted currencies: Ariary, Euro, USD</p>
+        <p class="text-black font-bold lg:text-start text-center">
+            {t('carRentalPage.paymentTermsSection.subtitle2')}
+        </p>
     </div>
 
     <!-- Image right side -->
@@ -58,7 +66,7 @@ import Icon from '../../../assets/icons/fleche-droite.svg'
         <div
             class="bg-pink-secondary text-black font-poppins font-bold flex items-center justify-center py-3 px-6 border-2 border-white absolute -bottom-3 right-0"
         >
-            Experimented
+            {t('homePage.carRentalSection.experimented')}
         </div>
     </div>
 </section>

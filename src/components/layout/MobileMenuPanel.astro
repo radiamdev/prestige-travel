@@ -1,16 +1,22 @@
 ---
 import { getLangFromUrl, useTranslations } from '../../i18n'
+import LanguagePicker from '../common/LanguagePicker.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<ul
+<div
     id="mobile-menu"
-    class="fixed top-0 right-[-100%] w-full h-screen bg-primary text-white flex flex-col items-center justify-center gap-5 text-2xl transition-all duration-300 lg:hidden z-40"
+    class="fixed top-0 right-[-100%] w-full h-screen bg-primary text-white flex flex-col items-center justify-center gap-8 text-2xl transition-all duration-300 lg:hidden z-40"
 >
-    <li><a href="/"> {t('global.home')} </a></li>
-    <li><a href="/#about-us">{t('global.aboutUs')}</a></li>
-    <li><a href="/#tours"> {t('global.ToursAndStays')} </a></li>
-    <li><a href={`/${lang}/car-rental/`}> {t('global.carRental')} </a></li>
-</ul>
+    <!-- Language Switcher -->
+    <LanguagePicker />
+
+    <ul class="flex flex-col items-center justify-center gap-4">
+        <li><a href="/"> {t('global.home')} </a></li>
+        <li><a href="/#about-us">{t('global.aboutUs')}</a></li>
+        <li><a href="/#tours"> {t('global.ToursAndStays')} </a></li>
+        <li><a href={`/${lang}/car-rental/`}> {t('global.carRental')} </a></li>
+    </ul>
+</div>

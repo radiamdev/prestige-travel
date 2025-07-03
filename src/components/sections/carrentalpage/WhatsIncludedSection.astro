@@ -3,7 +3,12 @@ import { Image } from 'astro:assets'
 import Icon from '../../../assets/icons/hand.svg'
 import illustration from '../../../assets/images/car_rental/whats_included.webp'
 import reservationIcon from '../../../assets/icons/reservation.svg'
-import BookingButton from '../../common/BookingButton.astro'
+import BookingButton from '../../common/BookingButton'
+interface Props {
+    t: (key: string) => string
+}
+
+const { t } = Astro.props as Props
 ---
 
 <section
@@ -20,52 +25,53 @@ import BookingButton from '../../common/BookingButton.astro'
     </div>
     <div class="lg:w-1/2 w-full space-y-6">
         <p class="text-black font-bold lg:text-start text-center">
-            Explore with Freedom
+            {t('carRentalPage.whatsIncludedSection.subtitle')}
         </p>
         <h1 class="text-primary text-5xl font-bold lg:text-start text-center">
-            What&apos;s Included
+            {t('carRentalPage.whatsIncludedSection.title')}
         </h1>
         <div>
             <ul class="list-none text-black/70 space-y-4">
                 <li class="flex items-center gap-4">
                     <Icon />
-                    <span class="text-gray-500">Private use of vehicle</span>
-                </li>
-                <li class="flex items-center gap-4">
-                    <Icon />
                     <span class="text-gray-500"
-                        >Experienced Malagasy driver-guide (English or French
-                        speaking)</span
+                        >{t('carRentalPage.whatsIncludedSection.item1')}</span
                     >
                 </li>
                 <li class="flex items-center gap-4">
                     <Icon />
                     <span class="text-gray-500"
-                        >Air-conditioned, road-ready 4x4 or minibus</span
+                        >{t('carRentalPage.whatsIncludedSection.item2')}</span
+                    >
+                </li>
+                <li class="flex items-center gap-4">
+                    <Icon />
+                    <span class="text-gray-500"
+                        >{t('carRentalPage.whatsIncludedSection.item3')}</span
                     >
                 </li>
 
                 <li class="flex items-center gap-4">
                     <Icon />
                     <span class="text-gray-500"
-                        >Full support from our local agency during your trip</span
+                        >{t('carRentalPage.whatsIncludedSection.item4')}</span
                     >
                 </li>
             </ul>
         </div>
         <p class="text-black/80 font-semibold lg:text-start text-center">
-            Fuel is not included and will be quoted separately based on your
-            planned itinerary.
+            {t('carRentalPage.whatsIncludedSection.description')}
         </p>
 
         <!-- Booking button -->
         <div class="flex lg:justify-start justify-center">
             <BookingButton
-                label="Booking"
+                type="submit"
+                label={t('carRentalPage.welcome.reservationButton')}
                 icon={reservationIcon.src}
                 iconAlt="Reservation icon"
                 className="mt-8"
-                href="/car-rental#booknow"
+                href="#booknow"
             />
         </div>
     </div>

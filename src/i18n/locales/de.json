@@ -94,7 +94,82 @@
         },
         "contactUsSection": {
             "title": "Kontaktieren Sie uns",
-            "subtitle": "Haben Sie eine Frage oder benötigen Sie ein Angebot?"
+            "subtitle": "Haben Sie eine Frage oder benötigen Sie ein Angebot?",
+            "contact": {
+                "email": "E-Mail",
+                "fullName": "Vollständiger Name",
+                "subject": "Betreff",
+                "subjectPlaceholder": "Nach Informationen fragen",
+                "message": "Nachricht",
+                "messagePlaceholder": "Ihre Nachricht...",
+                "send": "Senden",
+                "sending": "Wird gesendet...",
+                "success": "✅ Nachricht erfolgreich gesendet!",
+                "error": "❌ Nachricht konnte nicht gesendet werden."
+            }
+        }
+    },
+    "carRentalPage": {
+        "welcome": {
+            "title": "Autovermietung",
+            "description": "Entdecken Sie Madagaskar in Ihrem eigenen Tempo mit unserem zuverlässigen Autovermietungsservice. Egal, ob Sie tief in Nationalparks reisen oder Küstenstädte erkunden, wir bieten komfortable, klimatisierte Fahrzeuge mit erfahrenen lokalen Fahrer-Guides.",
+            "exploreButton": "Entdecken",
+            "reservationButton": "Jetzt buchen"
+        },
+        "whatsIncludedSection": {
+            "subtitle": "Entdecken Sie mit Freiheit",
+            "title": "Was ist enthalten",
+            "item1": "Private Nutzung des Fahrzeugs",
+            "item2": "Erfahrener malagasischer Fahrer-Guide (Englisch oder Französisch sprechend)",
+            "item3": "Klimatisierter, fahrbereiter 4x4 oder Minibus",
+            "item4": "Volle Unterstützung durch unsere lokale Agentur während Ihrer Reise",
+            "description": "Kraftstoff ist nicht inbegriffen und wird separat basierend auf Ihrem geplanten Reiseplan berechnet.",
+            "bookingButton": "Jetzt buchen"
+        },
+        "availableVehiclesSection": {
+            "subtitle": "Erfahren Sie mehr über unsere Agentur",
+            "title": "Verfügbare Fahrzeuge",
+            "description": "Ab 60 €/Tag – inklusive Fahrzeug, professionellem Fahrer-Guide und Kraftstoff. Ideal für Touren, Langstreckentransfers oder Geschäftsreisen."
+        },
+        "paymentTermsSection": {
+            "subtitle": "Einfache Zahlung",
+            "title": "Zahlungsbedingungen",
+            "item1": "20 % Anzahlung per Banküberweisung oder Western Union (Fahrzeugvermietung & Touren)",
+            "item2": "Ein Dienstleistungsvertrag wird nach der Reservierung gesendet",
+            "item3": "75 % des Gesamtbetrags in bar bei Ankunft in Antananarivo",
+            "item4": "5 % am Ende der Tour gezahlt",
+            "subtitle2": "Akzeptierte Währungen: Ariary, Euro, USD",
+            "experimented": "Erfahren"
+        },
+        "setupOrEmptySection": {
+            "subtitle": "Einfache Zahlung",
+            "title": "Vorbereitungs- oder \nLeerrückfahrtage",
+            "description": "Einige Routen erfordern möglicherweise zusätzliche Tage für die Fahrzeugpositionierung oder Rückfahrt. Diese werden dem Angebot hinzugefügt:",
+            "route": "Route",
+            "additionalDays": "Zusätzliche Tage",
+            "day": "Tag",
+            "days": "Tage"
+        },
+        "bookNowSection": {
+            "seats": "Sitze",
+            "airConditioned": "klimatisiert",
+            "subtitle": "Sichern Sie Ihre Reise mit einer schnellen Reservierung.",
+            "title": "Jetzt buchen",
+            "bookingForm": {
+                "fullName": "Vollständiger Name",
+                "email": "E-Mail-Adresse",
+                "desiredVehicle": "Gewünschtes Fahrzeug",
+                "vehicleRequired": "Die Auswahl eines Fahrzeugs ist erforderlich",
+                "pickup": "Abholort und Datum",
+                "dropoff": "Rückgabeort und Datum",
+                "passengers": "Anzahl der Passagiere",
+                "message": "Nachricht",
+                "messagePlaceholder": "Ihre Notiz oder Nachricht...",
+                "send": "Anfrage senden",
+                "sending": "Wird gesendet...",
+                "success": "✅ Anfrage erfolgreich gesendet!",
+                "error": "❌ Anfrage konnte nicht gesendet werden."
+            }
         }
     },
     "footer": {

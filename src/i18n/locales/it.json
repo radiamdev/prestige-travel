@@ -94,7 +94,82 @@
         },
         "contactUsSection": {
             "title": "Contattaci",
-            "subtitle": "Hai una domanda o hai bisogno di un preventivo?"
+            "subtitle": "Hai una domanda o hai bisogno di un preventivo?",
+            "contact": {
+                "email": "Email",
+                "fullName": "Nome completo",
+                "subject": "Oggetto",
+                "subjectPlaceholder": "Richiesta di informazioni",
+                "message": "Messaggio",
+                "messagePlaceholder": "Il tuo messaggio...",
+                "send": "Invia",
+                "sending": "Invio in corso...",
+                "success": "✅ Messaggio inviato con successo!",
+                "error": "❌ Impossibile inviare il messaggio."
+            }
+        }
+    },
+    "carRentalPage": {
+        "welcome": {
+            "title": "Noleggio auto",
+            "description": "Scopri il Madagascar al tuo ritmo con il nostro affidabile servizio di noleggio auto. Che tu stia esplorando i parchi nazionali o le città costiere, offriamo veicoli confortevoli e climatizzati con autisti-guide locali esperti.",
+            "exploreButton": "Esplora",
+            "reservationButton": "Prenota ora"
+        },
+        "whatsIncludedSection": {
+            "subtitle": "Esplora in libertà",
+            "title": "Cosa è incluso",
+            "item1": "Uso privato del veicolo",
+            "item2": "Autista-guida malgascio esperto (parlante inglese o francese)",
+            "item3": "4x4 o minibus climatizzato, pronto per la strada",
+            "item4": "Supporto completo dalla nostra agenzia locale durante il tuo viaggio",
+            "description": "Il carburante non è incluso e verrà quotato separatamente in base al tuo itinerario pianificato.",
+            "bookingButton": "Prenota ora"
+        },
+        "availableVehiclesSection": {
+            "subtitle": "Scopri di più sulla nostra agenzia",
+            "title": "Veicoli disponibili",
+            "description": "A partire da 60 €/giorno – inclusi veicolo, autista-guida professionale e carburante. Ideale per tour, trasferimenti a lunga distanza o viaggi d'affari."
+        },
+        "paymentTermsSection": {
+            "subtitle": "Pagamento facile",
+            "title": "Termini di pagamento",
+            "item1": "Acconto del 20% tramite bonifico bancario o Western Union (noleggio veicolo e tour)",
+            "item2": "Un contratto di servizio verrà inviato dopo la prenotazione",
+            "item3": "75% del totale pagato in contanti all'arrivo ad Antananarivo",
+            "item4": "5% pagato alla fine del tour",
+            "subtitle2": "Valute accettate: Ariary, Euro, USD",
+            "experimented": "Esperto"
+        },
+        "setupOrEmptySection": {
+            "subtitle": "Pagamento facile",
+            "title": "Giorni di preparazione o \nRitorno a vuoto",
+            "description": "Alcuni itinerari possono richiedere giorni aggiuntivi per il posizionamento o il ritorno del veicolo. Questi vengono aggiunti al preventivo:",
+            "route": "Itinerario",
+            "additionalDays": "Giorni aggiuntivi",
+            "day": "giorno",
+            "days": "giorni"
+        },
+        "bookNowSection": {
+            "seats": "posti",
+            "airConditioned": "climatizzato",
+            "subtitle": "Assicura il tuo viaggio con una rapida prenotazione.",
+            "title": "Prenota ora",
+            "bookingForm": {
+                "fullName": "Nome completo",
+                "email": "Indirizzo email",
+                "desiredVehicle": "Veicolo desiderato",
+                "vehicleRequired": "La selezione del veicolo è obbligatoria",
+                "pickup": "Luogo e data di ritiro",
+                "dropoff": "Luogo e data di consegna",
+                "passengers": "Numero di passeggeri",
+                "message": "Messaggio",
+                "messagePlaceholder": "La tua nota o messaggio...",
+                "send": "Invia richiesta",
+                "sending": "Invio in corso...",
+                "success": "✅ Richiesta inviata con successo!",
+                "error": "❌ Impossibile inviare la richiesta."
+            }
         }
     },
     "footer": {
