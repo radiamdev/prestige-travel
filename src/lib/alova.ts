@@ -3,7 +3,11 @@ import adapterFetch from 'alova/fetch'
 
 const alovaInstance = createAlova({
     requestAdapter: adapterFetch(),
-    responded: (response) => response.json(),
+    responded: async (response) => {
+        const text = await response.text();
+        return text ? JSON.parse(text) : {};
+      }
+      
 })
 
 export default alovaInstance
