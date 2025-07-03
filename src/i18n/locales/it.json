@@ -94,7 +94,19 @@
         },
         "contactUsSection": {
             "title": "Contattaci",
-            "subtitle": "Hai una domanda o hai bisogno di un preventivo?"
+            "subtitle": "Hai una domanda o hai bisogno di un preventivo?",
+            "contact": {
+                "email": "Email",
+                "fullName": "Nome completo",
+                "subject": "Oggetto",
+                "subjectPlaceholder": "Richiesta di informazioni",
+                "message": "Messaggio",
+                "messagePlaceholder": "Il tuo messaggio...",
+                "send": "Invia",
+                "sending": "Invio in corso...",
+                "success": "✅ Messaggio inviato con successo!",
+                "error": "❌ Impossibile inviare il messaggio."
+            }
         }
     },
     "carRentalPage": {

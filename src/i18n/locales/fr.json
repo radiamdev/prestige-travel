@@ -94,7 +94,19 @@
         },
         "contactUsSection": {
             "title": "Contactez-nous",
-            "subtitle": "Vous avez une question ou besoin d'un devis ?"
+            "subtitle": "Vous avez une question ou besoin d'un devis ?",
+            "contact": {
+                "email": "Email",
+                "fullName": "Nom complet",
+                "subject": "Objet",
+                "subjectPlaceholder": "Demande d'informations",
+                "message": "Message",
+                "messagePlaceholder": "Votre message...",
+                "send": "Envoyer",
+                "sending": "Envoi en cours...",
+                "success": "✅ Message envoyé avec succès !",
+                "error": "❌ Échec de l'envoi du message."
+            }
         }
     },
     "carRentalPage": {

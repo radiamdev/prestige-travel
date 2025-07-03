@@ -9,8 +9,18 @@ interface Props {
 }
 
 const { t } = Astro.props as Props
+
+import { getLangFromUrl } from '../../../i18n'
+
+const lang = getLangFromUrl(Astro.url)
 ---
 
+<!-- Hydrate Zustand avec la langue -->
+<script type="module" is:inline>
+    import { useTranslationStore } from '../i18n/useTranslationStore'
+    useTranslationStore.getState().setLang('{lang}')
+</script>
+<!-- Cela initialise la langue depuis l’URL pour qu’elle soit disponible côté React. -->
 <section
     id="contact"
     class="relative bg-primary lg:px-24 px-6 lg:pt-16 lg:pb-28 py-12 overflow-hidden flex items-center min-h-screen"
@@ -52,7 +62,7 @@ const { t } = Astro.props as Props
                     </div>
 
                     <!-- Contact Us form -->
-                    <ContactUsForm client:only />
+                    <ContactUsForm lang={lang} client:only />
                 </div>
 
                 <!-- Image du maki -->

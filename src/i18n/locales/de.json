@@ -94,7 +94,19 @@
         },
         "contactUsSection": {
             "title": "Kontaktieren Sie uns",
-            "subtitle": "Haben Sie eine Frage oder benötigen Sie ein Angebot?"
+            "subtitle": "Haben Sie eine Frage oder benötigen Sie ein Angebot?",
+            "contact": {
+                "email": "E-Mail",
+                "fullName": "Vollständiger Name",
+                "subject": "Betreff",
+                "subjectPlaceholder": "Nach Informationen fragen",
+                "message": "Nachricht",
+                "messagePlaceholder": "Ihre Nachricht...",
+                "send": "Senden",
+                "sending": "Wird gesendet...",
+                "success": "✅ Nachricht erfolgreich gesendet!",
+                "error": "❌ Nachricht konnte nicht gesendet werden."
+            }
         }
     },
     "carRentalPage": {

@@ -10,8 +10,15 @@ import {
     type ContactFormSchema,
 } from '../../lib/schemas/contactFormSchema'
 import { toast } from 'react-toastify'
+import { useTranslationStore } from '../../i18n/useTranslationStore'
+import { useEffect } from 'react'
+import type { Lang } from '../../types'
 
-export default function ContactUsForm() {
+type Props = {
+    lang: Lang
+}
+
+export default function ContactUsForm({ lang }: Readonly<Props>) {
     const {
         register,
         handleSubmit,
@@ -21,15 +28,21 @@ export default function ContactUsForm() {
         resolver: zodResolver(contactFormSchema),
     })
 
+    const { setLang, t } = useTranslationStore()
+
+    useEffect(() => {
+        setLang(lang)
+    }, [lang])
+
     const onSubmit = async (data: ContactFormSchema) => {
         try {
             const response = await sendMail(data)
             console.log('✅ Email sent:', response)
             reset()
-            toast.success('✅ Message sent successfully!')
+            toast.success(t('homePage.contactUsSection.contact.success'))
         } catch (error) {
             console.error('❌ Failed to send:', error)
-            toast.error('❌ Failed to send message.')
+            toast.error(t('homePage.contactUsSection.contact.error'))
         }
     }
 
@@ -37,7 +50,7 @@ export default function ContactUsForm() {
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <InputField
                 id="email"
-                label="Email"
+                label={t('homePage.contactUsSection.contact.email')}
                 placeholder="rova@prestige-travel.mg"
                 {...register('email')}
                 error={errors.email?.message}
@@ -45,7 +58,7 @@ export default function ContactUsForm() {
 
             <InputField
                 id="fullName"
-                label="Full name"
+                label={t('homePage.contactUsSection.contact.fullName')}
                 placeholder="Rova"
                 {...register('fullName')}
                 error={errors.fullName?.message}
@@ -53,16 +66,20 @@ export default function ContactUsForm() {
 
             <InputField
                 id="subject"
-                label="Subject"
-                placeholder="Asking for information"
+                label={t('homePage.contactUsSection.contact.subject')}
+                placeholder={t(
+                    'homePage.contactUsSection.contact.subjectPlaceholder'
+                )}
                 {...register('subject')}
                 error={errors.subject?.message}
             />
 
             <TextareaField
                 id="message"
-                label="Message"
-                placeholder="Your message..."
+                label={t('homePage.contactUsSection.contact.message')}
+                placeholder={t(
+                    'homePage.contactUsSection.contact.messagePlaceholder'
+                )}
                 {...register('message')}
                 error={errors.message?.message}
             />
@@ -70,7 +87,11 @@ export default function ContactUsForm() {
             <div className="pt-4 flex lg:justify-start justify-end">
                 <BookingButton
                     type="submit"
-                    label={isSubmitting ? 'Sending...' : 'Send'}
+                    label={
+                        isSubmitting
+                            ? t('homePage.contactUsSection.contact.sending')
+                            : t('homePage.contactUsSection.contact.send')
+                    }
                     icon={envoyerIcon.src}
                     iconAlt="Send icon"
                 />
