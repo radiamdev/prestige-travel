@@ -154,7 +154,22 @@
             "seats": "seats",
             "airConditioned": "air-conditioned",
             "subtitle": "Secure your trip with a quick reservation.",
-            "title": "Book Now"
+            "title": "Book Now",
+            "bookingForm": {
+                "fullName": "Full Name",
+                "email": "Email Address",
+                "desiredVehicle": "Desired Vehicle",
+                "vehicleRequired": "Vehicle selection is required",
+                "pickup": "Pick-up Location and Date",
+                "dropoff": "Drop-off Location and Date",
+                "passengers": "Number of Passengers",
+                "message": "Message",
+                "messagePlaceholder": "Your note or message...",
+                "send": "Send Request",
+                "sending": "Sending...",
+                "success": "✅ Request sent successfully!",
+                "error": "❌ Failed to send request."
+            }
         }
     },
     "footer": {

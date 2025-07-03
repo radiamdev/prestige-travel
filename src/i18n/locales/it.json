@@ -154,7 +154,22 @@
             "seats": "posti",
             "airConditioned": "climatizzato",
             "subtitle": "Assicura il tuo viaggio con una rapida prenotazione.",
-            "title": "Prenota ora"
+            "title": "Prenota ora",
+            "bookingForm": {
+                "fullName": "Nome completo",
+                "email": "Indirizzo email",
+                "desiredVehicle": "Veicolo desiderato",
+                "vehicleRequired": "La selezione del veicolo è obbligatoria",
+                "pickup": "Luogo e data di ritiro",
+                "dropoff": "Luogo e data di consegna",
+                "passengers": "Numero di passeggeri",
+                "message": "Messaggio",
+                "messagePlaceholder": "La tua nota o messaggio...",
+                "send": "Invia richiesta",
+                "sending": "Invio in corso...",
+                "success": "✅ Richiesta inviata con successo!",
+                "error": "❌ Impossibile inviare la richiesta."
+            }
         }
     },
     "footer": {

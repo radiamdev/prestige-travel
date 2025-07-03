@@ -154,7 +154,22 @@
             "seats": "Sitze",
             "airConditioned": "klimatisiert",
             "subtitle": "Sichern Sie Ihre Reise mit einer schnellen Reservierung.",
-            "title": "Jetzt buchen"
+            "title": "Jetzt buchen",
+            "bookingForm": {
+                "fullName": "Vollständiger Name",
+                "email": "E-Mail-Adresse",
+                "desiredVehicle": "Gewünschtes Fahrzeug",
+                "vehicleRequired": "Die Auswahl eines Fahrzeugs ist erforderlich",
+                "pickup": "Abholort und Datum",
+                "dropoff": "Rückgabeort und Datum",
+                "passengers": "Anzahl der Passagiere",
+                "message": "Nachricht",
+                "messagePlaceholder": "Ihre Notiz oder Nachricht...",
+                "send": "Anfrage senden",
+                "sending": "Wird gesendet...",
+                "success": "✅ Anfrage erfolgreich gesendet!",
+                "error": "❌ Anfrage konnte nicht gesendet werden."
+            }
         }
     },
     "footer": {

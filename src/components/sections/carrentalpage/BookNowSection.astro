@@ -9,6 +9,9 @@ interface Props {
 }
 
 const { t } = Astro.props as Props
+import { getLangFromUrl } from '../../../i18n'
+
+const lang = getLangFromUrl(Astro.url)
 ---
 
 <section
@@ -52,7 +55,8 @@ const { t } = Astro.props as Props
                     </div>
 
                     <!-- Booking Form -->
-                    <BookingForm client:only />
+                    <BookingForm lang={lang} client:only />
+
                 </div>
 
                 <!-- Image du maki -->

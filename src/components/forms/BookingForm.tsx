@@ -11,6 +11,13 @@ import {
     type BookingFormSchema,
 } from '../../lib/schemas/BookingFormSchema'
 import { sendRequest } from '../../lib/api/booking'
+import type { Lang } from '../../types'
+import { useTranslationStore } from '../../i18n/useTranslationStore'
+import { useEffect } from 'react'
+
+type Props = {
+    lang: Lang
+}
 
 const vehicles = [
     `Hyundai Grand Starex CVX 10 places, climatisée`,
@@ -20,7 +27,7 @@ const vehicles = [
     `Toyota Prado 120 5 places, climatisée`,
 ]
 
-export default function BookingForm() {
+export default function BookingForm({ lang }: Readonly<Props>) {
     const {
         register,
         handleSubmit,
@@ -31,15 +38,21 @@ export default function BookingForm() {
         resolver: zodResolver(bookingFormSchema),
     })
 
+    const { setLang, t } = useTranslationStore()
+
+    useEffect(() => {
+        setLang(lang)
+    }, [lang])
+
     const onSubmit = async (data: BookingFormSchema) => {
         try {
             const response = await sendRequest(data)
             console.log('✅ Request sent:', response)
             reset()
-            toast.success('✅ Request sent successfully!')
+            toast.success(t('carRentalPage.bookNowSection.bookingForm.success'))
         } catch (error) {
             console.error('❌ Failed to send:', error)
-            toast.error('❌ Failed to send request.')
+            toast.error(t('carRentalPage.bookNowSection.bookingForm.error'))
         }
     }
 
@@ -47,7 +60,7 @@ export default function BookingForm() {
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <InputField
                 id="fullname"
-                label="Full name"
+                label={t('carRentalPage.bookNowSection.bookingForm.fullName')}
                 placeholder="John Doe"
                 {...register('fullName')}
                 error={errors.fullName?.message}
@@ -64,11 +77,17 @@ export default function BookingForm() {
             <Controller
                 control={control}
                 name="desiredVehicle"
-                rules={{ required: 'Vehicle is required' }}
+                rules={{
+                    required: t(
+                        'carRentalPage.bookNowSection.bookingForm.vehicleRequired'
+                    ),
+                }}
                 render={({ field }) => (
                     <SelectField
                         id="desiredVehicle"
-                        label="Desired vehicle"
+                        label={t(
+                            'carRentalPage.bookNowSection.bookingForm.desiredVehicle'
+                        )}
                         options={vehicles}
                         required
                         value={field.value}
@@ -80,14 +99,15 @@ export default function BookingForm() {
 
             <InputField
                 id="pickUpLocationAndDate"
-                label="Pickup location and date"
+                label={t('carRentalPage.bookNowSection.bookingForm.pickup')}
                 placeholder="Antananarivo - 2025-06-15"
                 {...register('pickUpLocationAndDate')}
                 error={errors.pickUpLocationAndDate?.message}
             />
+
             <InputField
                 id="dropOffLocationAndDate"
-                label="Drop-off location and date"
+                label={t('carRentalPage.bookNowSection.bookingForm.dropoff')}
                 placeholder="Nosy Be - 2025-06-20"
                 {...register('dropOffLocationAndDate')}
                 error={errors.dropOffLocationAndDate?.message}
@@ -95,7 +115,7 @@ export default function BookingForm() {
 
             <InputField
                 id="numberOfPassengers"
-                label="Number of passengers"
+                label={t('carRentalPage.bookNowSection.bookingForm.passengers')}
                 type="number"
                 min="1"
                 placeholder="e.g. 5"
@@ -105,8 +125,10 @@ export default function BookingForm() {
 
             <TextareaField
                 id="message"
-                label="Message"
-                placeholder="Your note or message..."
+                label={t('carRentalPage.bookNowSection.bookingForm.message')}
+                placeholder={t(
+                    'carRentalPage.bookNowSection.bookingForm.messagePlaceholder'
+                )}
                 {...register('message')}
                 error={errors.message?.message}
             />
@@ -114,7 +136,13 @@ export default function BookingForm() {
             <div className="pt-4 flex lg:justify-start justify-end">
                 <BookingButton
                     type="submit"
-                    label={isSubmitting ? 'Sending...' : 'Send Request'}
+                    label={
+                        isSubmitting
+                            ? t(
+                                  'carRentalPage.bookNowSection.bookingForm.sending'
+                              )
+                            : t('carRentalPage.bookNowSection.bookingForm.send')
+                    }
                     icon={envoyerIcon.src}
                     iconAlt="Send icon"
                 />
