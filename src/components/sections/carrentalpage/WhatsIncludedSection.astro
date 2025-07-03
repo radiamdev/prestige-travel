@@ -3,7 +3,7 @@ import { Image } from 'astro:assets'
 import Icon from '../../../assets/icons/hand.svg'
 import illustration from '../../../assets/images/car_rental/whats_included.webp'
 import reservationIcon from '../../../assets/icons/reservation.svg'
-import BookingButton from '../../common/BookingButton.astro'
+import BookingButton from '../../common/BookingButton'
 interface Props {
     t: (key: string) => string
 }
@@ -66,11 +66,12 @@ const { t } = Astro.props as Props
         <!-- Booking button -->
         <div class="flex lg:justify-start justify-center">
             <BookingButton
+                type="submit"
                 label={t('carRentalPage.welcome.reservationButton')}
                 icon={reservationIcon.src}
                 iconAlt="Reservation icon"
                 className="mt-8"
-                href="/#booknow"
+                href="#booknow"
             />
         </div>
     </div>

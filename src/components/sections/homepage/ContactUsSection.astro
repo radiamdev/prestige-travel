@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets'
 import backgroundImage from '../../../assets/images/home/contact_bg.webp'
 import makiContact from '../../../assets/images/home/maki_contact.webp'
-import ContactUsForm from '../../forms/ContactUsForm.astro'
+import ContactUsForm from '../../forms/ContactUsForm'
 
 interface Props {
     t: (key: string) => string
@@ -52,7 +52,7 @@ const { t } = Astro.props as Props
                     </div>
 
                     <!-- Contact Us form -->
-                    <ContactUsForm />
+                    <ContactUsForm client:only="react" />
                 </div>
 
                 <!-- Image du maki -->
